@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Punto
+comment0.text=\r\n\ Una\ clase\ Punto\ que\ nos\ permite\ desplazar\ un\ punto\ por\ X\ y\ por\ Y\ para\ formar\ figuras\ geometricas\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 24/08/2025\r\n
+comment1.params=p_x\ p_y
+comment1.target=Punto(double,\ double)
+comment1.text=\ Constructor\ para\ el\ objecto\ Punto\r\n\ @param\ \ \ p_x\ \ \ \ \ abscisa\ x\r\n\ @param\ \ \ p_y\ \ \ \ \ tangente\ y\r\n
+comment2.params=
+comment2.target=Punto()
+comment2.text=\ Constructor\ para\ el\ objecto\ Punto\r\n\r\n
+comment3.params=p_x
+comment3.target=void\ setX(double)
+comment4.params=p_y
+comment4.target=void\ setY(double)
+comment5.params=
+comment5.target=double\ getX()
+comment6.params=
+comment6.target=double\ getY()
+comment7.params=p_dx\ p_dy
+comment7.target=void\ desplazar(double,\ double)
+comment7.text=\ Metodo\ que\ desplaza\ el\ punto\ segun\ los\ valores\ que\ le\ pasamos\r\n\ @param\ \ \ p_dx\ \ \ \ cuanto\ desplazamos\ el\ punto\ x\r\n\ @param\ \ \ p_dy\ \ \ \ cuanto\ desplazamos\ el\ punto\ y\r\n
+comment8.params=
+comment8.target=java.lang.String\ coordenadas()
+comment8.text=\ Metodo\ que\ devuelve\ las\ coordenadas\r\n\ @return\ \ String\ \r\n
+comment9.params=
+comment9.target=void\ mostrar()
+comment9.text=\ Metodo\ que\ muestra\ la\ posicion\ de\ los\ puntos\r\n\ \r\n
+numComments=10

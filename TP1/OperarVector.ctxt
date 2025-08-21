@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=OperarVector
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=p_var
+comment2.target=double\ calcularPromedio(int[])
+comment3.params=p_var
+comment3.target=int\ buscarMaximo(int[])
+numComments=4
