@@ -64,7 +64,8 @@ public class Cliente
      * @return  double
      */
     public double nuevoSaldo(double p_importe){
-        saldo = p_importe;
+        setSaldo(p_importe);
+
         return saldo;
     }
     
@@ -73,7 +74,7 @@ public class Cliente
      * @return  double
      */
     public double agregarSaldo(double p_importe){
-        saldo += p_importe;
+        setSaldo(getSaldo() + p_importe);
         return saldo;
     }
     

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Circulo
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Circulo\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=p_radio\ p_centro
+comment1.target=Circulo(double,\ Punto)
+comment2.params=
+comment2.target=Circulo()
+comment3.params=
+comment3.target=double\ getRadio()
+comment4.params=radio
+comment4.target=void\ setRadio(double)
+comment5.params=
+comment5.target=Punto\ getCentro()
+comment6.params=centro
+comment6.target=void\ setCentro(Punto)
+comment7.params=p_dx\ p_dy
+comment7.target=void\ desplazar(double,\ double)
+numComments=8
