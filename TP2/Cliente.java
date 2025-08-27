@@ -42,11 +42,6 @@ public class Cliente
         saldo = p_saldo;
     }
     
-        public double agregarSaldo(double p_importe){
-        saldo += p_importe;
-        return saldo;
-    }
-    
     //Getters
     public int getDNI(){
         return nroDni;
