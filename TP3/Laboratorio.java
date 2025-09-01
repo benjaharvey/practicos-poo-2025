@@ -1,4 +1,8 @@
-
+/**
+ * Una clase laboratorio que tiene ciertos atributos y admite metodos para mostrar sus datos, actualizar, etc
+ * 
+ * @author  Hardoy - Harvey
+ */
 public class Laboratorio
 {
     // instance variables
@@ -11,7 +15,6 @@ public class Laboratorio
     //Constructor
     Laboratorio(String p_nombre, String p_domicilio, String p_telefono, int p_compraMinima, int p_diaEntrega)
     {
-        // initialise instance variables
         setNombre(p_nombre);
         setDomicilio(p_domicilio);
         setTelefono(p_telefono);
@@ -21,12 +24,11 @@ public class Laboratorio
     
     Laboratorio(String p_nombre, String p_domicilio, String p_telefono)
     {
-        // initialise instance variables
         setNombre(p_nombre);
         setDomicilio(p_domicilio);
         setTelefono(p_telefono);
-        compraMinima = 0;
-        diaEntrega = 0;
+        setCompraMinima(0);
+        setDiaEntrega(0);
     }
     
     //Setters
@@ -74,14 +76,23 @@ public class Laboratorio
     }
     
     //Methods
+    /**
+     * Metodo que permite actualizar el atributo de compraMinima
+     */
     public void nuevaCompraMinima(int p_compraMinima){
         compraMinima = p_compraMinima;   
     }
-    
+
+    /**
+     * Metodo que permite actualizar el atributo de diaEntrega
+     */    
     public void nuevoDiaEntrega(int p_diaEnt){
         diaEntrega = p_diaEnt;
     }
     
+    /**
+     * Metodo para mostrar los datos del objeto Laboratorio
+     */
     public void mostrar(){
         System.out.println("Laboratorio: "+ getNombre());
         System.out.println("Domicilio: "+ getDomicilio() + "\t" + "- Telefono: "+ getTelefono());

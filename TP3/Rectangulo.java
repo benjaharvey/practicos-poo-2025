@@ -3,7 +3,7 @@
  * Una clase Rectangulo que tiene caracteristicas, se desplaza, se compara y se mide su distancia en base a otro rectangulo.
  * 
  * @author  Hardoy - Harvey
- * @version 
+ * @version 08/09/25
  */
 public class Rectangulo
 {
@@ -33,35 +33,31 @@ public class Rectangulo
      */
     public Rectangulo(double p_ancho, double p_alto)
     {
-        this.origen = new Punto(0.0, 0.0);
+        this.setOrigen(new Punto(0.0, 0.0));
         this.setAncho(p_ancho);
         this.setAlto(p_alto);
     }
 
     //Setters
     private void setOrigen(Punto p_origen) {
-        origen = p_origen;
+        this.origen = p_origen;
     }
-
     private void setAncho(double p_ancho) {
-        ancho = p_ancho;
+        this.ancho = p_ancho;
     }
-
     private void setAlto(double p_alto) {
-        alto = p_alto;
+        this.alto = p_alto;
     }
 
     //Getters
     public Punto getOrigen() {
-        return origen;
+        return this.origen;
     }
-
     public double getAncho() {
-        return ancho;
+        return this.ancho;
     }
-
     public double getAlto() {
-        return alto;
+        return this.alto;
     }
 
     /**
@@ -77,7 +73,7 @@ public class Rectangulo
     /**
      * Metodo para calcular el perimetro del rectangulo
      * 
-     * @return double
+     * @return  devuelve el perimetro del rectangulo
      */
     public double perimetro(){
         return 2 * (this.getAncho() + this.getAlto());
@@ -86,7 +82,7 @@ public class Rectangulo
     /**
      * Metodo para calcular la superficie del rectangulo
      * 
-     * @return double
+     * @return  devuelve la superficie del rectangulo
      */
     public double superficie(){
         return 2 * (this.getAncho() + this.getAlto());
@@ -104,7 +100,7 @@ public class Rectangulo
      * Metodo para calcular la distancia entre dos rectangulos en base a su origen
      * 
      * @param   otroRectangulo  otro rectangulo que se utiliza para calcular la distancia
-     * @return double
+     * @return  devuelve la distancia que hay entre el rectangulo y otro rectangulo
      */
     public double distanciaA(Rectangulo otroRectangulo){
         double pitagoras = Math.pow(this.getOrigen().getX() - otroRectangulo.getOrigen().getX(), 2) 
@@ -116,7 +112,7 @@ public class Rectangulo
      * Metodo para saber que rectangulo es mayor en base a la superficie
      * 
      * @param   otroRectangulo  otro rectangulo que se utiliza para calcular cual es mayor
-     * @return  Rectangulo
+     * @return  devuelve el objeto Rectangulo que es mayor en superficie
      */
     public Rectangulo elMayor(Rectangulo otroRectangulo){
         if(this.superficie() > otroRectangulo.superficie()){

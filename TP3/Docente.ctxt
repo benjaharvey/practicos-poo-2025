@@ -1,12 +1,12 @@
 #BlueJ class context
 comment0.target=Docente
-comment0.text=\r\n\ \r\n
+comment0.text=\r\n\ Una\ clase\ Docente\ que\ admite\ un\ metodo\ para\ calcular\ su\ sueldo\r\n\ \r\n\ @author\ \ Hardoy\ -\ Harvey\r\n\ @version\ 08/09/25\r\n
 comment1.params=p_nombre\ p_grado\ p_sueldoBasico\ p_asignacionFamiliar
 comment1.target=Docente(java.lang.String,\ java.lang.String,\ double,\ double)
-comment1.text=\r\n\ \r\n
+comment1.text=\r\n\ @param\ \ \ p_nombre\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nombre\ del\ Docente\r\n\ @param\ \ \ p_grado\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ grado\ donde\ ensenia\ el\ Docente\r\n\ @param\ \ \ p_sueldoBasico\ \ \ \ \ \ \ \ \ \ sueldo\ basico\ del\ Docente\r\n\ @param\ \ \ p_asignacionFamiliar\ \ \ \ asignacion\ familiar\ que\ se\ le\ da\ al\ Docente\r\n
 comment10.params=
 comment10.target=double\ calcularSueldo()
-comment10.text=\r\n\ \r\n
+comment10.text=\r\n\ Metodo\ para\ calcular\ el\ sueldo\ del\ Docente\ en\ base\ al\ sueldo\ basico\ y\ la\ asignacion\ familiar\r\n\ \r\n\ @return\ \ devuelve\ el\ resultado\ de\ calcular\ el\ sueldo\ del\ Docente\r\n
 comment2.params=p_nombre
 comment2.target=void\ setNombre(java.lang.String)
 comment3.params=p_grado

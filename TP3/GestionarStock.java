@@ -1,4 +1,6 @@
-
+/**
+ * Una clase que utilizamos para instanciar los objetos Laboratorio y Producto para luego probar sus metodos
+ */
 public class GestionarStock
 {
     public static void main(String[] args)

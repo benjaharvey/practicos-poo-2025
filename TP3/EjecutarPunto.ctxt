@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=EjecutarPunto
+comment0.text=\r\n\ Una\ clase\ que\ utilizamos\ para\ instanciar\ los\ objetos\ y\ probar\ sus\ metodos\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2

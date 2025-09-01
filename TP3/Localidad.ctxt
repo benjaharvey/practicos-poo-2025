@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Localidad
+comment0.text=\r\n\ Una\ clase\ Localidad\ que\ muestra\ su\ nombre\ y\ su\ provincia\ \r\n\ \r\n\ @author\ Hardoy\ -\ Harvey\ \r\n\ @version\ 08/09/25\r\n
+comment1.params=p_nombre\ p_provincia
+comment1.target=Localidad(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Localidad\r\n\ \r\n\ @param\ \ \ p_nombre\ \ \ \ \ \ \ \ nombre\ de\ la\ localidad\r\n\ @param\ \ \ p_provincia\ \ \ \ \ provincia\ a\ la\ que\ pertenece\ la\ localidad\r\n
+comment2.params=p_nombre
+comment2.target=void\ setNombre(java.lang.String)
+comment3.params=p_provincia
+comment3.target=void\ setProvincia(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getNombre()
+comment5.params=
+comment5.target=java.lang.String\ getProvincia()
+comment6.params=
+comment6.target=java.lang.String\ mostrar()
+comment6.text=\r\n\ Un\ metodo\ que\ nos\ muestra\ nombre\ y\ provincia\ de\ la\ localidad\r\n\ \r\n\ @return\ \ \ \ \ \ una\ cadena\ del\ nombre\ y\ provincia\ \r\n
+numComments=7

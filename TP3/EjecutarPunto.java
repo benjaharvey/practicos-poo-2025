@@ -1,3 +1,6 @@
+/**
+ * Una clase que utilizamos para instanciar los objetos y probar sus metodos
+ */
 public class EjecutarPunto
 {
     public static void main(String[] args){

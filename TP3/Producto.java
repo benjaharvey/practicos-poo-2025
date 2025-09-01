@@ -3,8 +3,8 @@ import java.util.Scanner;
  * Una clase producto que permite calcular precios, ajusta stock, mostrar datos del producto y del laboratorio del mismo, etc.
  * 
  * @author  Hardoy - Harvey
- * @version 
- */
+ * @version 08/09/25
+*/
 public class Producto
 {
     // instance variables
@@ -18,7 +18,9 @@ public class Producto
     private Laboratorio laboratorio;
     
 
-    /** Constructor de la clase Producto
+    /**
+     * Constructor de la clase Producto
+     * 
      * @param   p_codigo        codigo del producto
      * @param   p_rubro         rubro del producto
      * @param   p_descripcion   descripcion del producto
@@ -31,7 +33,6 @@ public class Producto
     Producto(int p_codigo, String p_rubro, String p_descripcion, double p_costo, int p_stock,
                     double p_porcPtoRepo, int p_existMinima, Laboratorio p_laboratorio)
     {
-        // initialise instance variables
         this.setCodigo(p_codigo);
         this.setRubro(p_rubro);
         this.setDescripcion(p_descripcion);
@@ -41,7 +42,9 @@ public class Producto
         this.setExistMinima(p_existMinima);
         this.setLaboratorio(p_laboratorio);
     }
-    /** Constructor de la clase Producto
+    /**
+     * Constructor de la clase Producto
+     * 
      * @param   p_codigo        codigo del producto
      * @param   p_rubro         rubro del producto
      * @param   p_descripcion   descripcion del producto
@@ -55,9 +58,9 @@ public class Producto
         this.setRubro(p_rubro);
         this.setDescripcion(p_descripcion);
         this.setCosto(p_costo);
-        this.stock = 0;
-        this.porcPtoRepo = 0.0;
-        this.existMinima = 0;
+        this.setStock(0);
+        this.setPorcPtoRepo(0.0);
+        this.setExistMinima(0);
         this.setLaboratorio(p_laboratorio);
     }
     
@@ -114,50 +117,63 @@ public class Producto
         return this.laboratorio;
     }
     
-    /** Metodo para ajustar el stock
+    /**
+     * Metodo para ajustar el stock
+     * 
      * @param   p_cantidad  cantidad a agregar/quitar del stock
      */
     public void ajuste(int p_cantidad){
         this.setStock(this.getStock() + p_cantidad);
     }
-    /** Metodo para calcular el precio de lista de un producto
-     * @return  double
+    /**
+     * Metodo para calcular el precio de lista de un producto
+     * 
+     * @return      devuelve el precio de lista de un producto
      */
     public double precioLista(){
         return (this.getCosto() + (this.getCosto() * 0.12));  
     }
-    /** Metodo para calcular el precio al contado de un producto
-     * @return  double
+    /**
+     * Metodo para calcular el precio al contado de un producto
+     * 
+     * @return      devuelve el precio al contado de un producto
      */
     public double precioContado(){
         return (this.precioLista() - (this.precioLista() * 0.05));
     }
-    /** Metodo para ajustar el porcentaje de reposicion
+    /** 
+     * Metodo para ajustar el porcentaje de reposicion
+     * 
      * @param   p_porce     porcentaje al que se ajusta
      */
     public void ajustarPtoRepo(double p_porce){
         this.setPorcPtoRepo(p_porce);
      }
-    /** Metodo para ajustar las existencias minimas de un producto
+    /**
+    * Metodo para ajustar las existencias minimas de un producto 
+    * 
     * @param    p_cantidad  cantidad minima a la que se ajusta
     */
     public void ajustarExistMin(int p_cantidad){
          this.setExistMinima(p_cantidad);
      }
-    /** Metodo para calcular el stock valorizado de un producto
-    * @return   double
+    /**
+    * Metodo para calcular el stock valorizado de un producto
+    * 
+    * @return       devuelve el stock valorizado de un producto
     */
     public double stockValorizado(){
         return (this.getStock() * this.getCosto()) * 1.12;
     }
-    /** Metodo para mostrar descripcion, precio de lista y al contado de un producto
-    * @return   String
+    /**
+    * Metodo para mostrar descripcion, precio de lista y al contado de un producto
+    * @return       devuelve una cadena con ciertos datos del producto
     */
     public String mostrarLinea(){
         return this.getDescripcion() + " " + this.precioLista() + " " + this.precioContado() + " ";
     }   
-    /** Metodo para mostrar los datos del laboratorio y del producto
-    * 
+    /** 
+    * Metodo para mostrar los datos del laboratorio y del producto
     */
     public void mostrar(){
         System.out.println("");
