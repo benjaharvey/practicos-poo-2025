@@ -1,33 +1,63 @@
-
+import java.util.*;
 /**
- * Write a description of class Empresa here.
+ * Una clase para probar los metodos de la clase EmpleadoConJefe
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Hardoy - Harvey 
+ * @version 08/09/25
  */
 public class Empresa
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Empresa
-     */
-    public Empresa()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Ingrese el CUIL del empleado: ");
+        long cuilEmpleado = teclado.nextLong();
+        teclado.nextLine();
+        System.out.println("Ingrese el Nombre del empleado: ");
+        String nombreEmpleado = teclado.nextLine();
+        System.out.println("Ingrese el Apellido del empleado");
+        String apellidoEmpleado = teclado.nextLine();
+        System.out.println("Ingrese el sueldo basico del empleado: $");
+        double sueldoEmpleado = teclado.nextDouble();
+        teclado.nextLine();
+        System.out.println("Ingrese el dia de ingreso del empleado): ");
+        int diaEmpleado = teclado.nextInt();
+        teclado.nextLine();
+        System.out.println("Ingrese el mes de ingreso del empleado): ");
+        int mesEmpleado = teclado.nextInt();
+        teclado.nextLine();
+        System.out.println("Ingrese el anio de ingreso del empleado): ");
+        int anioEmpleado = teclado.nextInt();
+        teclado.nextLine();
+        
+        Calendar fechaIngresoEmpleado = new GregorianCalendar(diaEmpleado, mesEmpleado, anioEmpleado);
+        
+        System.out.println("Ingrese el CUIL del Jefe: ");
+        long cuilJefe = teclado.nextLong();
+        teclado.nextLine();
+        System.out.println("Ingrese el Nombre del Jefe: ");
+        String nombreJefe = teclado.nextLine();
+        System.out.println("Ingrese el Apellido del Jefe");
+        String apellidoJefe = teclado.nextLine();
+        System.out.println("Ingrese el sueldo basico del Jefe: $");
+        double sueldoJefe = teclado.nextDouble();
+        teclado.nextLine();
+        System.out.println("Ingrese el dia de ingreso del Jefe): ");
+        int diaJefe = teclado.nextInt();
+        teclado.nextLine();
+        System.out.println("Ingrese el mes de ingreso del Jefe): ");
+        int mesJefe = teclado.nextInt();
+        teclado.nextLine();
+        System.out.println("Ingrese el anio de ingreso del Jefe): ");
+        int anioJefe = teclado.nextInt();
+        teclado.nextLine();
+        
+        Calendar fechaIngresoJefe = new GregorianCalendar(diaJefe, mesJefe, anioJefe);
+        EmpleadoConJefe unJefe = new EmpleadoConJefe(cuilJefe, apellidoJefe, nombreJefe, sueldoJefe, fechaIngresoJefe);
+        
+        EmpleadoConJefe unEmpleado = new EmpleadoConJefe(cuilEmpleado, apellidoEmpleado, nombreEmpleado, sueldoEmpleado, fechaIngresoEmpleado, unJefe);
+        
+        unEmpleado.mostrarPantalla();
+        System.out.println(unEmpleado.autorizarSalida());
     }
 }

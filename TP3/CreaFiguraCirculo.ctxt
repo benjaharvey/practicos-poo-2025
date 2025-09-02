@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=CreaFiguraCirculo
+comment0.text=\r\n\ Una\ clase\ que\ nos\ permite\ probar\ los\ metodos\ que\ definimos\ en\ la\ clase\ Circulo.\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 8/9/25\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2

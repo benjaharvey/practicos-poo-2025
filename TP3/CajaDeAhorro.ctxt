@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=CajaDeAhorro
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ CajaDeAhorro\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Una\ clase\ CajaDeAhorro\ que\ permite\ obtener\ sus\ datos\r\n\ \r\n\ @author\ Hardoy\ -\ Harvey\ \r\n\ @version\ 08/09/25\r\n
 comment1.params=p_nroCuenta\ p_titular
 comment1.target=CajaDeAhorro(int,\ Persona)
 comment10.params=

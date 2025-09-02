@@ -14,7 +14,7 @@ public class EmpleadoConJefe
     private double sueldoBasico;
     private Calendar fechaIngreso;
     private EmpleadoConJefe jefe;
-
+    
     /**
      * Constructor con jefe y anio de ingreso
      * 
@@ -36,7 +36,7 @@ public class EmpleadoConJefe
     }
     
     /**
-     * Constructor con jefe y con anio de ingreso
+     * Constructor con jefe y con fecha de ingreso
      * 
      * @param   p_cuil      cuil del empleado
      * @param   p_apellido  apellido del empleado
@@ -105,11 +105,11 @@ public class EmpleadoConJefe
         this.sueldoBasico = p_importe;
     }
     private void setAnioIngreso(int p_anio){
-        Calendar fechaHoy = new GregorianCalendar(p_anio, 1, 1);
+        Calendar fechaHoy = new GregorianCalendar(p_anio, 0 , 1);
         this.setFechaIngreso(fechaHoy);
     }
     private void setFechaIngreso(Calendar p_fecha) {
-        this.fechaIngreso = new GregorianCalendar(p_fecha.DAY_OF_MONTH, p_fecha.MONTH, p_fecha.YEAR);
+        this.fechaIngreso = p_fecha;
     } 
     private void setJefe(EmpleadoConJefe p_jefe) {
         this.jefe = p_jefe;
@@ -129,7 +129,7 @@ public class EmpleadoConJefe
         return this.sueldoBasico;
     }
     public int getAnioIngreso(){
-        return this.fechaIngreso.YEAR;
+        return this.getFechaIngreso().get(Calendar.YEAR);
     }
     public Calendar getFechaIngreso() {
         return this.fechaIngreso;
@@ -202,7 +202,7 @@ public class EmpleadoConJefe
      * @return  devuelve una cadena formada por nombre y apellido
      */
     public String nomYape(){
-        return this.getNombre() + this.getApellido();
+        return this.getNombre() + " " + this.getApellido();
     }
 
     /**
@@ -211,17 +211,22 @@ public class EmpleadoConJefe
      * @return  devuelve una cadena formada por apellido y nombre
      */
     public String apeYnom(){
-        return this.getApellido() + this.getNombre();
+        return this.getApellido() + " " + this.getNombre();
     }
     
     /**
      * Metodo para mostrar por pantalla los datos del empleado
      */
-    public void mostrar(){
+    public void mostrarPantalla(){
         System.out.println("Nombre y Apellido: " + this.nomYape());
         System.out.println("CUIL: " + this.getCuil());
         System.out.println("Sueldo Neto: $" + this.getSueldoBasico());
-        System.out.println("Responde a: ");
+        if(this.getJefe() == null){
+            System.out.println("Responde a: GERENTE GENERAL");
+        }
+        else{
+                    System.out.println("Responde a: " + this.getJefe().nomYape());
+        }
     }
     
     /**
@@ -231,7 +236,8 @@ public class EmpleadoConJefe
      */
     public boolean esAniversario(){
         Calendar fechaHoy = new GregorianCalendar();
-        return this.getFechaIngreso() == fechaHoy;
+        return this.getFechaIngreso().get(Calendar.DAY_OF_MONTH) == fechaHoy.get(Calendar.DAY_OF_MONTH)
+                && this.getFechaIngreso().get(Calendar.MONTH) == fechaHoy.get(Calendar.MONTH);
     }
     
     /**
@@ -245,16 +251,16 @@ public class EmpleadoConJefe
     }
     
     /**
-     * Metodo para mostrar...
+     * Metodo para mostrar si esta autorizado o no a salir 1 hora antes
      * 
      * @return  devuelve una cadena que representa la autorizacion del jefe para la salida
      */
     public String autorizarSalida(){
         if(this.esAniversario() == true){
-            return "Salida autorizada";
+            return "\nSalida autorizada";
         }
         else{
-            return "Salida NO autorizada... vuelva a trabajar";
+            return "\nSalida NO autorizada... vuelva a trabajar";
         }
     }
 }

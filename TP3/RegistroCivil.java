@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- * Un ejecutable para instanciar los objetos y probar sus metodos
+ * Un clase ejecutable RegistroCivil para instanciar los objetos Hombre y Mujer, para luego probar sus metodos
  * 
  * @author  Hardoy - Harvey
  * @version 08/09/25

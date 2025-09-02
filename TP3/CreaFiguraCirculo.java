@@ -1,13 +1,10 @@
-
+import java.util.Random;
 /**
  * Una clase que nos permite probar los metodos que definimos en la clase Circulo.
  * 
  * @author      Hardoy - Harvey 
  * @version     8/9/25
  */
-
-import java.util.Random;
-
 public class CreaFiguraCirculo
 {
     public static void main(String[] args){

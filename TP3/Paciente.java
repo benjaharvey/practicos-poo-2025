@@ -1,5 +1,5 @@
 /**
- * Una clase Paciente que tiene metodos para
+ * Una clase Paciente que tiene metodos para mostrar sus datos
  * 
  * @author  Hardoy - Harvey 
  * @version 08/09/25

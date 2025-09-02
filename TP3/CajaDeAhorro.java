@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class CajaDeAhorro here.
+ * Una clase CajaDeAhorro que permite obtener sus datos
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Hardoy - Harvey 
+ * @version 08/09/25
  */
 public class CajaDeAhorro
 {
