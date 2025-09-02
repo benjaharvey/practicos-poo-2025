@@ -84,15 +84,22 @@ public class Mujer
      * @param   p_hombre    hombre con el que se quiere casar a la mujer
      */
     public void casarseCon(Hombre p_hombre){
-        this.setEsposo(p_hombre);
-        this.setEstadoCivil("Casada");
+        if(this.getEsposo() == null){
+            this.setEsposo(p_hombre);
+            this.getEsposo().casarseCon(this);
+            this.setEstadoCivil("Casada");
+        }
     }
     
     /**
      * Metodo para divorciar a la Mujer
      */
     public void divorcio(){
-        this.setEstadoCivil("Divorciada");
+        if(this.getEstadoCivil().equals("Casada")){
+            this.setEsposo(null);
+            this.setEstadoCivil("Divorciada");
+        
+        }
     }
     
     /**
