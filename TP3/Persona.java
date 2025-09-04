@@ -10,7 +10,7 @@ public class Persona
     private int nroDni;
     private String nombre;
     private String apellido;
-    private int anioNacimiento;
+    private Calendar fechaNacimiento;
 
     /** Constructor de la clase Persona
      * @param   p_dni       DNI de la persona
@@ -18,12 +18,19 @@ public class Persona
      * @param   p_apellido  apellido de la persona
      * @param   p_anio      anio de nacimiento de la persona
      */
-    Persona(int p_dni, String p_nombre, String p_apellido, int p_anio)
+    public Persona(int p_dni, String p_nombre, String p_apellido, int p_anio)
     {
         setDNI(p_dni);
         setNombre(p_nombre);
         setApellido(p_apellido);
         setAnioNacimiento(p_anio);
+    }
+    
+    public Persona(int p_dni, String p_nombre, String p_apellido, Calendar p_fecha){
+        setDNI(p_dni);
+        setNombre(p_nombre);
+        setApellido(p_apellido);
+        setFechaNacimiento(p_fecha);
     }
     
     //Setters
@@ -40,7 +47,12 @@ public class Persona
     }
     
     private void setAnioNacimiento(int p_anio){
-        anioNacimiento = p_anio;
+        Calendar fechaHoy = new GregorianCalendar(p_anio, 0, 1);
+        this.setFechaNacimiento(fechaHoy);
+    }
+    
+    private void setFechaNacimiento(Calendar p_fecha){
+        this.fechaNacimiento = p_fecha;
     }
     
     //Getters
@@ -57,7 +69,11 @@ public class Persona
     }
     
     public int getAnioNacimiento(){
-        return anioNacimiento;
+        return this.getFechaNacimiento().get(Calendar.YEAR);
+    }
+    
+    public Calendar getFechaNacimiento(){
+        return this.fechaNacimiento;
     }
     
     /** Metodo para calcular la edad de la persona en base a su anio de nacimiento
@@ -82,6 +98,13 @@ public class Persona
     public String apeYNom(){
          return getApellido() + " " + getNombre();   
     }    
+    
+    
+    public boolean esCumpleaños(){ 
+         Calendar fechaHoy = new GregorianCalendar(); 
+         return ( (fechaHoy.get(Calendar.DATE) == fechaNacimiento.get(Calendar.DATE)) && ((fechaHoy.get(Calendar.MONTH) + 1) == (fechaNacimiento.get(Calendar.MONTH) + 1)) ); 
+    }
+    
     
     /** Metodo para mostrar los datos de la persona
      * 
