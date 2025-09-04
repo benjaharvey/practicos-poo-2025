@@ -64,10 +64,10 @@ public class Escuela
         
         System.out.println("\nEscuela: " + this.getNombre() + " \tDomicilio: " + this.getDomicilio() + " \tDirector: " + this.getDirector());
         System.out.println("-----------------------------------------------------------------------------");
-        System.out.println("Docente: " + p_docente.getNombre());
-        System.out.println("Sueldo: " + p_docente.calcularSueldo());
-        System.out.println("Sueldo basico: " + p_docente.getSueldoBasico());
-        System.out.println("Asignacion Familiar: " + p_docente.getAsignacionFamiliar());
+        System.out.println("Docente: " + this.getDocente().getNombre());
+        System.out.println("Sueldo: " +this.getDocente().calcularSueldo());
+        System.out.println("Sueldo basico: " + this.getDocente().getSueldoBasico());
+        System.out.println("Asignacion Familiar: " + this.getDocente().getAsignacionFamiliar());
     }
     
 }

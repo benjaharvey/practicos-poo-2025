@@ -30,7 +30,11 @@ public class Empresa
         int anioEmpleado = teclado.nextInt();
         teclado.nextLine();
         
-        Calendar fechaIngresoEmpleado = new GregorianCalendar(diaEmpleado, mesEmpleado, anioEmpleado);
+        Calendar fechaIngresoEmpleado = new GregorianCalendar(anioEmpleado, mesEmpleado, diaEmpleado);
+        
+        EmpleadoConJefe unEmpleadoSinJefe = new EmpleadoConJefe(cuilEmpleado, apellidoEmpleado, nombreEmpleado, sueldoEmpleado, fechaIngresoEmpleado);
+        unEmpleadoSinJefe.mostrarPantalla();
+        System.out.println(unEmpleadoSinJefe.autorizarSalida());
         
         System.out.println("Ingrese el CUIL del Jefe: ");
         long cuilJefe = teclado.nextLong();
@@ -52,7 +56,7 @@ public class Empresa
         int anioJefe = teclado.nextInt();
         teclado.nextLine();
         
-        Calendar fechaIngresoJefe = new GregorianCalendar(diaJefe, mesJefe, anioJefe);
+        Calendar fechaIngresoJefe = new GregorianCalendar(anioJefe, mesJefe, diaJefe);
         EmpleadoConJefe unJefe = new EmpleadoConJefe(cuilJefe, apellidoJefe, nombreJefe, sueldoJefe, fechaIngresoJefe);
         
         EmpleadoConJefe unEmpleado = new EmpleadoConJefe(cuilEmpleado, apellidoEmpleado, nombreEmpleado, sueldoEmpleado, fechaIngresoEmpleado, unJefe);

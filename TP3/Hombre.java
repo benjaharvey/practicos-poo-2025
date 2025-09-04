@@ -97,8 +97,12 @@ public class Hombre
      */
     public void divorcio(){
         if(this.getEstadoCivil().equals("Casado")){
-            this.setEsposa(null);
             this.setEstadoCivil("Divorciado");
+            
+            if(this.getEsposa() != null && this.getEsposa().getEstadoCivil().equals("Casada")){
+                this.getEsposa().divorcio();
+                this.setEsposa(null);
+            }
         }
     }
     

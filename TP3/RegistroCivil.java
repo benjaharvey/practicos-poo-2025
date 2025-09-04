@@ -30,13 +30,12 @@ public class RegistroCivil
         unHombre.mostrarEstadoCivil();
         
         unaMujer.casarseCon(unHombre);
-        unHombre.casarseCon(unaMujer);
         
         unaMujer.casadaCon();
         unHombre.casadoCon();
         
-        unaMujer.divorcio();
         unHombre.divorcio();
+        
         unaMujer.mostrarEstadoCivil();
         unHombre.mostrarEstadoCivil();
         
