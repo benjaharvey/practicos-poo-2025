@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class ProbarCuentaBancaria here.
+ * Clase ProbarCuentaBancaria, que nos permite ir probando uno por uno los metodos que definimos en la clase CuentaBancaria
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author      Hardoy-Harvey
+ * @version     8/9/2025
  */
 public class ProbarCuentaBancaria
 {

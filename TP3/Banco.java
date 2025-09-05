@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Banco here.
+ * Clase que nos permite probar los metodos definidos en las clases CuentaCorriente y CajaDeAhorro
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author      Hardoy - Harvey
+ * @version     8/9/2025
  */
 public class Banco
 {
@@ -11,7 +11,7 @@ public class Banco
         Persona titular = new Persona(45526737, "Juan Tomas", "Figuerero", 2004);
         
         CajaDeAhorro nuevaCaja = new CajaDeAhorro(26122003, titular, 45000);
-        CuentaBancaria nuevaCuenta = new CuentaBancaria(26122003, titular, 20000);
+        CuentaCorriente nuevaCuenta = new CuentaCorriente(26122003, titular, 20000);
         
         nuevaCaja.mostrar();
         
@@ -27,7 +27,5 @@ public class Banco
         nuevaCuenta.extraer(25000);
         
         nuevaCuenta.mostrar();
-        
-        System.out.println("Cuenta Bancaria: " + nuevaCuenta.toStrinf());
     }
 }

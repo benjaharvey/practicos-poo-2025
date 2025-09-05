@@ -58,7 +58,7 @@ public class Punto
     }
     /** Metodo para calcular la distancia entre el objeto punto y y otro objeto punto
      * @param   p_ptoDistante   otro punto hasta el que se calcula la distancia
-     * @return double
+     * @return  double
      */
     public double distanciaA(Punto p_ptoDistante){
         double pitagoras = Math.pow(this.getX() - p_ptoDistante.getX(), 2) 

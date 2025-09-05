@@ -26,5 +26,5 @@ comment8.target=java.lang.String\ coordenadas()
 comment8.text=\ Metodo\ que\ devuelve\ las\ coordenadas\r\n\ @return\ \ String\ \r\n
 comment9.params=p_ptoDistante
 comment9.target=double\ distanciaA(Punto)
-comment9.text=\ Metodo\ para\ calcular\ la\ distancia\ entre\ el\ objeto\ punto\ y\ y\ otro\ objeto\ punto\r\n\ @param\ \ \ p_ptoDistante\ \ \ otro\ punto\ hasta\ el\ que\ se\ calcula\ la\ distancia\r\n\ @return\ double\r\n
+comment9.text=\ Metodo\ para\ calcular\ la\ distancia\ entre\ el\ objeto\ punto\ y\ y\ otro\ objeto\ punto\r\n\ @param\ \ \ p_ptoDistante\ \ \ otro\ punto\ hasta\ el\ que\ se\ calcula\ la\ distancia\r\n\ @return\ \ double\r\n
 numComments=11
