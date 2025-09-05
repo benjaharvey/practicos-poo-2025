@@ -2,6 +2,7 @@
 comment0.target=Empleado
 comment1.params=p_cuil\ p_apellido\ p_nombre\ p_importe\ p_anio
 comment1.target=Empleado(long,\ java.lang.String,\ java.lang.String,\ double,\ int)
+comment1.text=\r\n\ Primer\ constructor\ de\ la\ clase\ Empleado\r\n\r\n\ @param\ \ \ p_cuil\ \ \ \ \ \ \ \ \ \ Cuil\ del\ empleado\r\n\ @param\ \ \ p_apellido\ \ \ \ \ \ Apellido\ del\ empleado\r\n\ @param\ \ \ p_nombre\ \ \ \ \ \ \ \ Nombre\ del\ empleado\r\n\ @param\ \ \ p_importe\ \ \ \ \ \ \ Sueldo\ basico\ del\ empleado\r\n\ @param\ \ \ p_anio\ \ \ \ \ \ \ \ \ \ A\u00F1o\ de\ ingreso\ del\ empleado\r\n
 comment10.params=
 comment10.target=java.lang.String\ getNombre()
 comment11.params=
@@ -29,6 +30,7 @@ comment19.target=java.lang.String\ nomYape()
 comment19.text=\r\n\ Metodo\ para\ juntar\ el\ nombre\ y\ apellido\ del\ empleado\r\n\ \r\n\ @return\ \ devuelve\ una\ cadena\ formada\ por\ nombre\ y\ apellido\r\n
 comment2.params=p_cuil\ p_apellido\ p_nombre\ p_importe\ p_fecha
 comment2.target=Empleado(long,\ java.lang.String,\ java.lang.String,\ double,\ java.util.Calendar)
+comment2.text=\r\n\ Primer\ constructor\ de\ la\ clase\ Empleado\r\n\r\n\ @param\ \ \ p_cuil\ \ \ \ \ \ \ \ \ \ Cuil\ del\ empleado\r\n\ @param\ \ \ p_apellido\ \ \ \ \ \ Apellido\ del\ empleado\r\n\ @param\ \ \ p_nombre\ \ \ \ \ \ \ \ Nombre\ del\ empleado\r\n\ @param\ \ \ p_importe\ \ \ \ \ \ \ Sueldo\ basico\ del\ empleado\r\n\ @param\ \ \ p_anio\ \ \ \ \ \ \ \ \ \ Fecha\ de\ ingreso\ del\ empleado\r\n
 comment20.params=
 comment20.target=java.lang.String\ apeYnom()
 comment20.text=\r\n\ Metodo\ para\ juntar\ el\ nombre\ y\ apellido\ del\ empleado\r\n\ \r\n\ @return\ \ devuelve\ una\ cadena\ formada\ por\ apellido\ y\ nombre\r\n

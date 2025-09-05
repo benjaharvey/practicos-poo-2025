@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class EmpresaConMenu here.
+ * Esta clase nos permite instanciar la clase Empleado, haciendo las operaciones a traves de un menu visual básico
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author      Hardoy - Harvey 
+ * @version     8/9/2025
  */
 
 import java.util.Scanner;

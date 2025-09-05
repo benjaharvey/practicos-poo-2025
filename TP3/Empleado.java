@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Empleado here.
+ * Clase Empleado que nos permite instanciar un objeto empleado, calcular su salario neto y determinar si puede o no salir antes
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author      Hardoy - Harvey
+ * @version     8/9/2025
  */
 
 import java.util.*;
@@ -16,6 +16,18 @@ public class Empleado
     private double sueldoBasico;
     private Calendar fechaIngreso;
     
+    
+    /**
+     * Primer constructor de la clase Empleado
+     *
+     * @param   p_cuil          Cuil del empleado
+     * @param   p_apellido      Apellido del empleado
+     * @param   p_nombre        Nombre del empleado
+     * @param   p_importe       Sueldo basico del empleado
+     * @param   p_anio          Año de ingreso del empleado
+     */
+    
+    
     public Empleado(long p_cuil, String p_apellido, String p_nombre, double p_importe, int p_anio){
         this.setCuil(p_cuil);
         this.setNombre(p_nombre);
@@ -23,6 +35,17 @@ public class Empleado
         this.setSueldoBasico(p_importe);
         this.setAnioIngreso(p_anio);
     }
+    
+    
+    /**
+     * Primer constructor de la clase Empleado
+     *
+     * @param   p_cuil          Cuil del empleado
+     * @param   p_apellido      Apellido del empleado
+     * @param   p_nombre        Nombre del empleado
+     * @param   p_importe       Sueldo basico del empleado
+     * @param   p_anio          Fecha de ingreso del empleado
+     */
     
     public Empleado(long p_cuil, String p_apellido, String p_nombre, double p_importe, Calendar p_fecha){
         this.setCuil(p_cuil);
