@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Una clase que utilizamos para instanciar el objeto Rectangulo y probar sus metodos
  */
-public class crearFigura
+public class crearFiguraRectangulo
 {
     public static void main(String[] args){
         Scanner teclado = new Scanner(System.in);

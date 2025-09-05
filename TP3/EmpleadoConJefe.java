@@ -69,6 +69,7 @@ public class EmpleadoConJefe
         this.setCuil(p_cuil);
         this.setApellido(p_apellido);
         this.setNombre(p_nombre);
+        this.setSueldoBasico(p_importe);
         this.setAnioIngreso(p_anio);
         this.setJefe(null);
     }    
@@ -87,6 +88,7 @@ public class EmpleadoConJefe
         this.setCuil(p_cuil);
         this.setApellido(p_apellido);
         this.setNombre(p_nombre);
+        this.setSueldoBasico(p_importe);
         this.setFechaIngreso(p_fecha);
         this.setJefe(null);
     }
@@ -146,7 +148,7 @@ public class EmpleadoConJefe
      public int antiguedad(){
         Calendar fechaHoy = new GregorianCalendar();
         int anioHoy = fechaHoy.get(Calendar.YEAR);
-        return this.getFechaIngreso().YEAR - anioHoy;
+        return anioHoy - this.getFechaIngreso().get(Calendar.YEAR);
     }
     
     /**
@@ -193,7 +195,7 @@ public class EmpleadoConJefe
      */
     
     public double sueldoNeto(){
-        return getSueldoBasico() + this.adicional() - this.descuento();
+        return this.getSueldoBasico() + this.adicional() - this.descuento();
     }
     
     /**
@@ -220,12 +222,12 @@ public class EmpleadoConJefe
     public void mostrarPantalla(){
         System.out.println("Nombre y Apellido: " + this.nomYape());
         System.out.println("CUIL: " + this.getCuil());
-        System.out.println("Sueldo Neto: $" + this.getSueldoBasico());
+        System.out.println("Sueldo Neto: $" + this.sueldoNeto());
         if(this.getJefe() == null){
             System.out.println("Responde a: GERENTE GENERAL");
         }
         else{
-                    System.out.println("Responde a: " + this.getJefe().nomYape());
+            System.out.println("Responde a: " + this.getJefe().nomYape());
         }
     }
     
@@ -236,8 +238,8 @@ public class EmpleadoConJefe
      */
     public boolean esAniversario(){
         Calendar fechaHoy = new GregorianCalendar();
-        return this.getFechaIngreso().get(Calendar.DAY_OF_MONTH) == fechaHoy.get(Calendar.DAY_OF_MONTH)
-                && this.getFechaIngreso().get(Calendar.MONTH) == fechaHoy.get(Calendar.MONTH);
+        return this.getFechaIngreso().get(Calendar.DAY_OF_MONTH)  == fechaHoy.get(Calendar.DAY_OF_MONTH)
+                && (this.getFechaIngreso().get(Calendar.MONTH) - 1) == fechaHoy.get(Calendar.MONTH);
     }
     
     /**
