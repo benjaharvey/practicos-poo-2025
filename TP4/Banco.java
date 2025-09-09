@@ -1,0 +1,118 @@
+import java.util.*;
+/**
+ * Una clase Banco que tiene empleados, una localidad y mas datos. Puede listar sueldos, calcular total a pagar en base a los mismos y mostrar estos datos.
+ * 
+ * @author      Hardoy - Harvey
+ * @version     22/09/25
+ */
+public class Banco
+{
+    private String nombre;
+    private int nroSucursal;
+    private Localidad localidad;
+    private ArrayList <Empleado> empleados;
+
+    /**
+     * Constructor de la clase Banco para un empleado
+     * 
+     * @param   p_nombre        nombree del banco
+     * @param   p_localidad     localidad del banco
+     * @param   p_nroSucursal   numero de sucursal del banco
+     * @param   p_empleado      empleado del banco
+     */
+    public Banco(String p_nombre, Localidad p_localidad, int p_nroSucursal, Empleado p_empleado){
+        this.setNombre(p_nombre);
+        this.setLocalidad(p_localidad);
+        this.setNroSucursal(p_nroSucursal);
+        this.setEmpleados(new ArrayList());
+        this.agregarEmpleado(p_empleado);
+    }
+
+    /**
+     * Constructor de la clase Banco para varios empleados
+     * 
+     * @param   p_nombre        nombree del banco
+     * @param   p_localidad     localidad del banco
+     * @param   p_nroSucursal   numero de sucursal del banco
+     * @param   p_empleados     empleados del banco
+     */
+    public Banco(String p_nombre, Localidad p_localidad, int p_nroSucursal, ArrayList <Empleado> p_empleados){
+        this.setNombre(p_nombre);
+        this.setLocalidad(p_localidad);
+        this.setNroSucursal(p_nroSucursal);
+        this.setEmpleados(p_empleados);
+    }
+    
+    //Setters
+    private void setNombre(String p_nombre){
+        this.nombre = p_nombre;
+    }
+    private void setLocalidad(Localidad p_localidad){
+        this.localidad = p_localidad;
+    }
+    private void setNroSucursal(int p_nroSucursal){
+        this.nroSucursal = p_nroSucursal;
+    }
+    private void setEmpleados(ArrayList <Empleado> p_empleados){
+        this.empleados = p_empleados;
+    }
+    
+    //Getters
+    public String getNombre(){
+        return this.nombre;
+    }
+    public Localidad getLocalidad(){
+        return this.localidad;
+    }
+    public int getNroSucursal(){
+        return this.nroSucursal;
+    }
+    public ArrayList <Empleado> getEmpleados(){
+        return this.empleados;
+    }
+    
+    public boolean agregarEmpleado(Empleado p_empleado){
+        return this.getEmpleados().add(p_empleado);
+    }
+    public boolean quitarEmpleado(Empleado p_empleado){
+        if(this.getEmpleados().size() > 1){
+            return this.getEmpleados().remove(p_empleado);
+        }
+        else{
+            return false;
+        }
+    }
+    
+    /**
+     * Metodo para listar los sueldos de los empleados.
+     */
+    public void listarSueldos(){
+        for(int i = 0; i<this.getEmpleados().size(); i++){
+            System.out.println(((Empleado)this.getEmpleados().get(i)).mostrarLinea());
+        }
+    }
+    
+    /**
+     * Metodo para calcular el total a pagar en base a la suma de los sueldos.
+     * 
+     * @return  devuelve un flotante que equivale a la suma de los sueldos de los empleados
+     */
+    public double sueldosAPagar(){
+        double sueldoAPagar = 0;
+        for(int i = 0; i < this.getEmpleados().size(); i++){
+            sueldoAPagar += ((Empleado)this.getEmpleados().get(i)).sueldoNeto();
+        }
+        return sueldoAPagar;
+    }
+    
+    /**
+     * Metodo que muestra informacion del banco, de los empleados y del total a pagarle a los mismos.
+     */
+    public void mostrar(){
+        System.out.println("\nBanco: " + this.getNombre() + "\t\tSucursal: " + this.getNroSucursal());
+        System.out.println("Localidad: " + this.getLocalidad().getNombre() + "\tProvincia: " + this.getLocalidad().getProvincia());
+        this.listarSueldos();
+        System.out.println("TOTAL A PAGAR: -------------------------------------------- $" + this.sueldosAPagar());
+    }   
+        
+}
