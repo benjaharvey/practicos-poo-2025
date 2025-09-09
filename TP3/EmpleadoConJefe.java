@@ -170,21 +170,17 @@ public class EmpleadoConJefe
      */
     
     private double adicional(){
-        double plusAntiguedad = 0;
-        
         if(this.antiguedad() < 2){
-            plusAntiguedad = (getSueldoBasico() * 0.02);
+            return (getSueldoBasico() * 0.02);
         }
         
-        if(this.antiguedad() >= 2 && this.antiguedad() < 10){
-            plusAntiguedad = (getSueldoBasico() * 0.04);
+        else if(this.antiguedad() >= 2 && this.antiguedad() < 10){
+            return  (getSueldoBasico() * 0.04);
         }
         
-        if(this.antiguedad() >= 10) {
-            plusAntiguedad = (getSueldoBasico() * 0.06);
+        else{
+            return (getSueldoBasico() * 0.06);
         }
-        
-        return plusAntiguedad;
     }
     
     /**
@@ -238,7 +234,7 @@ public class EmpleadoConJefe
      */
     public boolean esAniversario(){
         Calendar fechaHoy = new GregorianCalendar();
-        return this.getFechaIngreso().get(Calendar.DAY_OF_MONTH)  == fechaHoy.get(Calendar.DAY_OF_MONTH)
+        return this.getFechaIngreso().get(Calendar.DAY_OF_MONTH) == fechaHoy.get(Calendar.DAY_OF_MONTH)
                 && (this.getFechaIngreso().get(Calendar.MONTH) - 1) == fechaHoy.get(Calendar.MONTH);
     }
     
