@@ -1,13 +1,11 @@
-
+import java.util.Scanner;
+import java.util.*;
 /**
  * Esta clase nos permite instanciar la clase Empleado, haciendo las operaciones a traves de un menu visual básico
  * 
  * @author      Hardoy - Harvey 
  * @version     8/9/2025
  */
-
-import java.util.Scanner;
-import java.util.*;
 
 public class MenuEjemplo {
     public static void main(String[] args) {

@@ -8,7 +8,7 @@ import java.util.*;
 public class Curso
 {
     private String nombre;
-    private HashMap alumnos;
+    private HashMap<Integer, Alumno> alumnos;
     
     /**
      * Constructor de la clase Curso sin alumnos.
@@ -78,39 +78,50 @@ public class Curso
     }
     
     /**
+     * Metodo para saber si un alumno esta inscripto por medio de su LU/
      * 
+     * @param   p_lu    libreta universitaria del alumno que se busca
+     * @return  devuelve true o false dependiendo si esta inscripto o no
      */
     public boolean estaInscripto(int p_lu){
         return this.getAlumnos().containsKey(new Integer (p_lu));
     }
     
     /**
+     * Metodo para saber si un alumno esta inscripto por medio de el mismo.
      * 
+     * @param   p_alumno    objeto Alumno el cual se busca
+     * @return  devuelve true o false dependiendo si esta inscripto o no
      */
     public boolean estaInscripto(Alumno p_alumno){
         return this.getAlumnos().containsValue(p_alumno);
     }
     
     /**
+     * Metodo para buscar un alumno por medio de su LU.
      * 
+     * @param   p_lu    libreta universitaria del alumno a buscar
+     * @return  devuelve un objeto Alumno a cual corresponde el LU
      */
     public Alumno buscarAlumno(int p_lu){
         return (Alumno)this.getAlumnos().get(new Integer(p_lu));
     }
     
     /**
+     * Metodo para imprimir el promedio del alumno.
      * 
+     * @param   p_lu    libreta universitaria del alumno a imprimir promedio
      */
     public void imprimirPromedioDelAlumno(int p_lu){
         System.out.println("Promedio del alumno con LU " + p_lu + ": " + this.buscarAlumno(p_lu).promedio());
     }
     
     /**
-     * 
+     * Metodo para mostrar los datos de cada alumno de la coleccion.
      */
     public void mostrarInscriptos(){
-        for(int i = 0; i < this.getAlumnos().size(); i++){
-            System.out.println(this.getAlumnos().)
+        for(Map.Entry<Integer, Alumno> a: alumnos.entrySet()){
+            ((Alumno)a.getValue()).mostrar();
         }
     }
     

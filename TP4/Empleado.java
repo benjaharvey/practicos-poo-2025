@@ -139,11 +139,11 @@ public class Empleado
             plusAntiguedad = (getSueldoBasico() * 0.02);
         }
         
-        if(this.antiguedad() >= 2 && this.antiguedad() < 10){
+        else if(this.antiguedad() >= 2 && this.antiguedad() < 10){
             plusAntiguedad = (getSueldoBasico() * 0.04);
         }
         
-        if(this.antiguedad() >= 10) {
+        else{
             plusAntiguedad = (getSueldoBasico() * 0.06);
         }
         
@@ -206,7 +206,7 @@ public class Empleado
      */
     
     public String mostrarLinea(){
-        return this.getCuil() + " " + this.apeYnom() + " ............... $" + this.sueldoNeto();
+        return "\n" + this.getCuil() + " " + this.apeYnom() + " ............... $" + this.sueldoNeto();
     }
     
 }

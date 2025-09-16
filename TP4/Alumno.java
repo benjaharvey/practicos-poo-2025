@@ -105,14 +105,8 @@ public class Alumno
      * 
      */
     public void mostrar(){
-        System.out.println("Nombre y Apellido: " + nomYApe());
+        System.out.println("\nNombre y Apellido: " + nomYApe());
         System.out.println("LU: " + getLU() + " " + "Notas: " + getNota1() + "-" + getNota2());
         System.out.println("Promedio: " + promedio() + "-" + leyendaAprueba());
     }
-    
-    
-    
-    
-    
-    
 }

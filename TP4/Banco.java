@@ -84,6 +84,16 @@ public class Banco
     }
     
     /**
+     * Metodo para buscar un empleado por medio de su posicion
+     * 
+     * @param   p_cuil  cuil del empleado
+     * @return  devuelve el objeto Empleado
+     */
+    public Empleado buscarEmpleado(int p_pos){
+        return (Empleado)this.getEmpleados().get(new Integer(p_pos - 1));
+    }
+    
+    /**
      * Metodo para listar los sueldos de los empleados.
      */
     public void listarSueldos(){
@@ -112,7 +122,7 @@ public class Banco
         System.out.println("\nBanco: " + this.getNombre() + "\t\tSucursal: " + this.getNroSucursal());
         System.out.println("Localidad: " + this.getLocalidad().getNombre() + "\tProvincia: " + this.getLocalidad().getProvincia());
         this.listarSueldos();
-        System.out.println("TOTAL A PAGAR: -------------------------------------------- $" + this.sueldosAPagar());
+        System.out.println("\nTOTAL A PAGAR: -------------------------------------------- $" + this.sueldosAPagar());
     }   
         
 }
