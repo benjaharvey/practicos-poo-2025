@@ -16,15 +16,26 @@ public class BancoConHash
     private ArrayList <Empleado> empleados;
     
     public BancoConHash(String p_nombre, Localidad p_localidad, int p_nroSucursal, Empleado p_empleado){
-        
+        this.setNombre(p_nombre);
+        this.setLocalidad(p_localidad);
+        this.setNroSucursal(p_nroSucursal);
+        this.setEmpleados(new ArrayList());
+        this.agregarEmpleado(p_empleado);
     }
     
     public BancoConHash(String p_nombre, Localidad p_localidad, int p_nroSucursal, ArrayList <Empleado> p_empleados){
-        
+        this.setNombre(p_nombre);
+        this.setLocalidad(p_localidad);
+        this.setNroSucursal(p_nroSucursal);
+        this.setEmpleados(p_empleados);
     }
     
     public BancoConHash(String p_nombre, Localidad p_localidad, int p_nroSucursal, ArrayList <Empleado> p_empleados, ArrayList <CuentaBancaria> p_cuentas){
-        
+        this.setNombre(p_nombre);
+        this.setLocalidad(p_localidad);
+        this.setNroSucursal(p_nroSucursal);
+        this.setEmpleados(p_empleados);
+        this.setCuentasBancarias(p_cuentas);
     }
     
     private void setNombre(String p_nombre){
@@ -79,5 +90,82 @@ public class BancoConHash
         }
     }
     
+    public void listarSueldos(){
+        for(int i = 0; i < this.getEmpleados().size(); i++){
+            System.out.println(((Empleado)this.getEmpleados().get(i)).mostrarLinea());
+        }
+    }
     
+    public double sueldosAPagar(){
+        double sueldoAPagar = 0;
+        
+        for(int i = 0; i < this.getEmpleados().size(); i++){
+            sueldoAPagar += ((Empleado)this.getEmpleados().get(i)).sueldoNeto();
+        }
+        
+        return sueldoAPagar;
+    }
+    
+    public void mostrar(){
+        System.out.println("Banco: " + this.getNombre() + "    Sucursal: " + this.getNroSucursal());
+        System.out.println("Localidad: " + this.getLocalidad().getNombre() + "    Provincia: " + this.getLocalidad().getProvincia());
+    }
+    
+    public boolean agregarCuentaBancaria(CuentaBancaria p_cuenta){
+        return this.getCuentasBancarias().add(p_cuenta);
+    }
+    
+    public boolean quitarCuentaBancaria(CuentaBancaria p_cuenta){
+        if(this.getCuentasBancarias().size() >= 0){
+            return this.getCuentasBancarias().remove(p_cuenta);
+        } else {
+            return false;
+        }
+    }
+    
+    public void listarCuentasConSaldoCero(){
+        for(int i = 0; i < this.getCuentasBancarias().size(); i++){
+            if(((CuentaBancaria)this.getCuentasBancarias().get(i)).getSaldo() == 0){
+                System.out.println(((CuentaBancaria) this.getCuentasBancarias().get(i)).toStrinf());
+            }
+        }
+    }
+    
+    public HashSet<Persona> listaDeTitulares() {
+        HashSet<Persona> titulares = new HashSet<>();
+
+            if (cuentasBancarias != null) {
+                for (CuentaBancaria cuenta : cuentasBancarias) {
+                    if (cuenta != null && cuenta.getTitular() != null) {
+                        titulares.add(cuenta.getTitular());
+                    }
+                }
+            }
+
+            return titulares;
+    }
+
+    
+    private int cuentasSaldoActivo(){
+        int cantidad = 0;
+        
+        if(this.getCuentasBancarias() != null){
+            for(CuentaBancaria cuenta : this.getCuentasBancarias()){
+                if(cuenta.getSaldo() > 0){
+                    cantidad++;
+                }
+            }
+        }
+        
+        return cantidad;
+    }
+    
+    public void mostrarResumen(){
+        mostrar();
+        System.out.println("************************************** \n" + "  RESUMEN DE CUENTAS BANCARIAS  \n" + "************************************** ");
+        
+        System.out.println("Numero total de Cuentas Bancarias: " + this.getCuentasBancarias().size());
+        System.out.println("Cuentas Activas: " + cuentasSaldoActivo());
+        System.out.println("Cuentas Saldo Cero: " + listarCuentasConSaldoCero());
+    }
 }
