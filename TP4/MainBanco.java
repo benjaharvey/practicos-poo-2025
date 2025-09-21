@@ -10,10 +10,7 @@ public class MainBanco {
         Empleado empleado2 = new Empleado(5555, "Flavio", "Mendoza", 250000, 2010);
         
         nuevoBanco.agregarEmpleado(empleado2);
-        
-        nuevoBanco.mostrar();
-        
-        System.out.println("Sueldos a pagar: " + nuevoBanco.sueldosAPagar());
+
         
         Persona unaPersona = new Persona(5343, "Juan", "Perez", 2008);
         
