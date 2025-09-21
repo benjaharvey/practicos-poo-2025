@@ -15,12 +15,18 @@ public class MainBanco {
         
         Persona otraPersona = new Persona(1234, "Pablo", "Mendez", 2001);
         
+        Persona otraPersona2 = new Persona(1234, "Flavio", "Mendez", 2005);
+        
         CuentaBancaria unaCuenta = new CuentaBancaria(123, unaPersona, 4000);
         
-        CuentaBancaria otraCuenta = new CuentaBancaria(456, otraPersona);
+        CuentaBancaria otraCuenta = new CuentaBancaria(456, otraPersona, 12000);
+        
+        CuentaBancaria otraCuenta2 = new CuentaBancaria(999, otraPersona2, 0);
+        
         
         nuevoBanco.agregarCuentaBancaria(unaCuenta);
         nuevoBanco.agregarCuentaBancaria(otraCuenta);
+        nuevoBanco.agregarCuentaBancaria(otraCuenta2);
         
         nuevoBanco.mostrarResumen();
         
