@@ -184,7 +184,7 @@ public class Banco
         for(CuentaBancaria cuenta: cuentasBancarias){
             if(cuenta.getSaldo() == 0){
                 contador++;
-                cuenta.mostrar(); //Este o el contador tiene que ir en otra funcion
+                cuenta.mostrar(); 
             }
         }
         System.out.print(contador);
@@ -193,18 +193,16 @@ public class Banco
     /**
      * 
      */
-    public HashSet<Persona> listaDeTitulares() {
-        HashSet<Persona> titulares = new HashSet<>();
-
-            if (cuentasBancarias != null) {
-                for (CuentaBancaria cuenta : cuentasBancarias) {
-                    if (cuenta != null && cuenta.getTitular() != null) {
-                        titulares.add(cuenta.getTitular());
-                    }
-                }
-            }
-
-            return titulares;
+    public HashSet <Persona> listaDeTitulares(){
+        HashSet <Persona> titulares = new HashSet <> ();
+        
+        for(int i = 0; i <this.getCuentasBancarias().size() ; i++){
+            CuentaBancaria cuenta = (CuentaBancaria)this.getCuentasBancarias().get(i);
+            Persona persona = cuenta.getTitular();
+            titulares.add(persona);
+        }
+        
+        return titulares;
     }
 
     /**

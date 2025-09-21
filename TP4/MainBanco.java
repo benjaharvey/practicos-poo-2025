@@ -21,7 +21,7 @@ public class MainBanco {
         
         CuentaBancaria unaCuenta = new CuentaBancaria(123, unaPersona, 4000);
         
-        CuentaBancaria otraCuenta = new CuentaBancaria(456, otraPersona);
+        CuentaBancaria otraCuenta = new CuentaBancaria(456, otraPersona, 0);
         
         nuevoBanco.agregarCuentaBancaria(unaCuenta);
         nuevoBanco.agregarCuentaBancaria(otraCuenta);
