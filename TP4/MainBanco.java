@@ -11,10 +11,6 @@ public class MainBanco {
         
         nuevoBanco.agregarEmpleado(empleado2);
         
-        nuevoBanco.mostrar();
-        
-        System.out.println("Sueldos a pagar: " + nuevoBanco.sueldosAPagar());
-        
         Persona unaPersona = new Persona(5343, "Juan", "Perez", 2008);
         
         Persona otraPersona = new Persona(1234, "Pablo", "Mendez", 2001);

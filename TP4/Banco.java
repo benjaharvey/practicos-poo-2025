@@ -148,24 +148,35 @@ public class Banco
     }
     
     /**
+     * 
+     */
+    public void mostrarSueldosAPagar(){
+        this.listarSueldos();
+        System.out.println("\nTOTAL A PAGAR: -------------------------------------------- $" + this.sueldosAPagar());
+        
+    }
+    
+    /**
      * Metodo que muestra informacion del banco, de los empleados y del total a pagarle a los mismos.
      */
     public void mostrar(){
         System.out.println("\nBanco: " + this.getNombre() + "\t\tSucursal: " + this.getNroSucursal());
         System.out.println("Localidad: " + this.getLocalidad().getNombre() + "\tProvincia: " + this.getLocalidad().getProvincia());
-        this.listarSueldos();
-        System.out.println("\nTOTAL A PAGAR: -------------------------------------------- $" + this.sueldosAPagar());
     }   
     
     /**
+     * Metodo para agregar una cuenta bancaria a la lista
      * 
+     * @return  devuelve true o false dependiendo de si se agrego o no
      */
         public boolean agregarCuentaBancaria(CuentaBancaria p_cuenta){
         return this.getCuentasBancarias().add(p_cuenta);
     }
     
     /**
+     * Metodo para quitar una cuenta bancaria de la lista
      * 
+     * @return  devuelve true o false dependiendo de si se quito o no
      */
     public boolean quitarCuentaBancaria(CuentaBancaria p_cuenta){
         if(this.getCuentasBancarias().size() > 0){
@@ -176,22 +187,38 @@ public class Banco
     }
     
     /**
-     * 
+     * Metodo para listar las cuentas con saldo cero
      */
     public void listarCuentasConSaldoCero(){
+        int contador = 0;
+        System.out.println("\n---------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("Cuentas sin saldo: ");
+        System.out.println("--Cuenta-----------Apellido y Nombre");
+        for(CuentaBancaria cuenta: cuentasBancarias){
+            if(cuenta.getSaldo() == 0){
+                 System.out.println(cuenta.getNroCuenta() + "\t\t" + cuenta.getTitular().apeYNom());
+            }
+        }
+    }
+    
+    /**
+     * Metodo para listar las cuentas con saldo cero
+     */
+    public void contarCuentasSaldoCero(){
         int contador = 0;
         System.out.print("Cuentas saldo cero: ");
         for(CuentaBancaria cuenta: cuentasBancarias){
             if(cuenta.getSaldo() == 0){
                 contador++;
-                cuenta.mostrar(); //Este o el contador tiene que ir en otra funcion
             }
         }
         System.out.print(contador);
     }
     
     /**
+     * Metodo para guardar en una lista los titulares de cuenta
      * 
+     * @return  devuelve 
      */
     public HashSet<Persona> listaDeTitulares() {
         HashSet<Persona> titulares = new HashSet<>();
@@ -208,7 +235,9 @@ public class Banco
     }
 
     /**
+     * Metodo para contar cuantos cuentas tienen saldo activo
      * 
+     * @return  devuelve un entero dado por la cantidad de cuentas activas
      */
     private int cuentasSaldoActivo(){
         int cantidad = 0;
@@ -225,7 +254,7 @@ public class Banco
     }
     
     /**
-     * 
+     * Metodo para mostrar un resumen de las cuentas bancarias
      */
     public void mostrarResumen(){
         HashSet<Persona> titulares = listaDeTitulares();
@@ -234,12 +263,13 @@ public class Banco
         System.out.println("************************************** \n" + "  RESUMEN DE CUENTAS BANCARIAS  \n" + "************************************** ");
         
         System.out.println("Numero total de Cuentas Bancarias: " + this.getCuentasBancarias().size());
-        System.out.println("Cuentas Activas: " + cuentasSaldoActivo());
-        listarCuentasConSaldoCero();
+        System.out.println("Cuentas Activas: " + this.cuentasSaldoActivo());
+        this.contarCuentasSaldoCero();
+        this.listarCuentasConSaldoCero();
         System.out.println("----------------------------------------------------------------------------------------------------------------------------");
         System.out.print("Listado de clientes: ");
         for(Persona titular: titulares){
-            System.out.print(titular.nomYApe()+ ", ");
+            System.out.print(titular.nomYApe()+ "; ");
         }
         System.out.println("\n----------------------------------------------------------------------------------------------------------------------------");
     }
