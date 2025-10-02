@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Comercio
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Comercio\ here.\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\r\n\ @version\ \ \ \ \ 22/9/25\r\n
+comment0.text=\r\n\ Una\ clase\ Comercio\ que\ tiene\ nombre\ y\ varios\ empleados.\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\r\n\ @version\ \ \ \ \ 22/9/25\r\n
 comment1.params=p_nombre
 comment1.target=Comercio(java.lang.String)
 comment1.text=\r\n\ Constructor\ de\ la\ clase\ Comercio\ sin\ empleados\r\n\ \r\n\ @param\ \ \ p_nombre\ \ \ \ \ \ \ \ nombre\ del\ comercio\ \ \ \ \r\n

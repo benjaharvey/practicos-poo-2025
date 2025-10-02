@@ -1,6 +1,6 @@
 import java.util.*;
 /**
- * Write a description of class Pedido here.
+ * Una clase que tiene fecha, cliente, productos y un laboratorio.
  * 
  * @author      Hardoy - Harvey
  * @version     22/9/25

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Pedido
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pedido\ here.\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\r\n\ @version\ \ \ \ \ 22/9/25\r\n
+comment0.text=\r\n\ Una\ clase\ que\ tiene\ fecha,\ cliente,\ productos\ y\ un\ laboratorio.\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\r\n\ @version\ \ \ \ \ 22/9/25\r\n
 comment1.params=p_fecha\ p_cliente\ p_productos
 comment1.target=Pedido(java.util.Calendar,\ Cliente,\ java.util.ArrayList)
 comment1.text=\r\n\ Constructor\ de\ la\ clase\ Pedido\ para\ varios\ pedidos\r\n

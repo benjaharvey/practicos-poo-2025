@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Cuadrado
+comment0.text=\r\n\ Una\ clase\ Cuadrado\ que\ es\ subclase\ de\ Rectangulo.\r\n\ \r\n\ @author\ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \r\n
+comment1.params=p_origen\ p_lado
+comment1.target=Cuadrado(Punto,\ double)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Rectangulo\r\n\ \r\n\ @param\ \ \ p_origen\ \ \ \ una\ clase\ Punto\ que\ representa\ el\ origen\ del\ Cuadrado\r\n\ @param\ \ \ p_lado\ \ \ \ \ \ longitud\ del\ lado\ del\ Cuadrado\r\n
+comment2.params=
+comment2.target=java.lang.String\ nombreFigura()
+comment2.text=\r\n\ Metodo\ para\ nombrar\ el\ tipo\ de\ figura\ del\ Objeto\r\n\ \r\n\ @return\ \ devuelve\ una\ cadena\ que\ es\ el\ tipo\ de\ figura\r\n
+comment3.params=
+comment3.target=void\ caracteristicas()
+comment3.text=\r\n\ Metodo\ para\ mostrar\ las\ caracteristicas\ del\ cuadrado\r\n
+numComments=4

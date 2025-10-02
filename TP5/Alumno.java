@@ -1,15 +1,12 @@
-/**
- * Una clase Alumno que nos permite ingresar sus datos, notas, calcular su promedio, determinar si aprobo, etc.
+/** Una clase Alumno que nos permite ingresar sus datos, notas, calcular su promedio, determinar si aprobo, etc. Una subclase de Persona.
  *
  * @author      Hardoy - Harvey 
- * @version     24/08/2025
+ * @version     /2025
  */
-public class Alumno
+public class Alumno extends Persona
 {
     // instance variables
     private int lu;
-    private String nombre;
-    private String apellido;
     private double nota1;
     private double nota2;
     
@@ -17,31 +14,25 @@ public class Alumno
      * @param   p_lu        Libreta universitaria del alumno
      * @param   p_nombre    nombre del alumno
      * @param   p_apellido  apellido del alumno
+     * @param   p_dni       dni del alumno
+     * @param   p_anio      anio de nacimiento del alumno
      */
-    Alumno(int p_lu, String p_nombre, String p_apellido)
+    Alumno(int p_lu, String p_nombre, String p_apellido, int p_dni, int p_anio)
     {
-        // initialise instance variables
-        setLU(p_lu);
-        setNombre(p_nombre);
-        setApellido(p_apellido);
-        nota1 = 0.0;
-        nota2 = 0.0;
+        super(p_dni, p_nombre, p_apellido, p_anio);
+        this.setLU(p_lu);
+        this.setNotaUno(0.0);
+        this.setNotaDos(0.0);
     }
 
     //Setters
     private void setLU(int p_lu){
         lu = p_lu;
     }
-    private void setNombre(String p_nombre){
-        nombre = p_nombre;
-    }
-    private void setApellido(String p_apellido){
-        apellido = p_apellido;
-    }
-    public void setNota1(double p_nota1){
+    public void setNotaUno(double p_nota1){
         nota1 = p_nota1;
     }
-    public void setNota2(double p_nota2){
+    public void setNotaDos(double p_nota2){
         nota2 = p_nota2;
     }
     
@@ -49,16 +40,10 @@ public class Alumno
     public int getLU(){
         return lu;
     }
-    public String getNombre(){
-        return nombre;
-    }
-    public String getApellido(){
-        return apellido;
-    }
-    public double getNota1(){
+    public double getNotaUno(){
         return nota1;
     }
-    public double getNota2(){
+    public double getNotaDos(){
         return nota2;
     }
     
@@ -66,14 +51,14 @@ public class Alumno
      * @return double
      */
     public double promedio(){
-        return (getNota1() + getNota2()) / 2.0;
+        return (getNotaUno() + getNotaDos()) / 2.0;
     }
     
     /** Metodo que devuelve true si el alumno cumplio las condiciones para aprobar o false si no lo hizo
      * @return boolean
      */
     public boolean aprueba(){
-        return (promedio() >= 7 && getNota1() > 6 && getNota2() > 6);
+        return (promedio() >= 7 && getNotaUno() > 6 && getNotaDos() > 6);
     }
     
     /** Metodo que devuelve un texto para avisar si el alumno aprobo o no la mteria
@@ -92,22 +77,28 @@ public class Alumno
      * @return String
      */  
     public String nomYApe(){
-        return getNombre() + " " + getApellido(); 
+        return super.getNombre() + " " + super.getApellido(); 
     } 
 
     /** Metodo para concatenar apellido y nombre
      * @return String
      */    
     public String apeYNom(){
-         return getApellido() + " " + getNombre();   
+         return super.getApellido() + " " + super.getNombre();   
     }
     
     /** Metodo para mostrar los datos, notas, promedio y si aprobo o no el alumno
      * 
      */
     public void mostrar(){
-        System.out.println("\nNombre y Apellido: " + nomYApe());
-        System.out.println("LU: " + getLU() + " " + "Notas: " + getNota1() + "-" + getNota2());
+        super.mostrar();
+        System.out.println("LU: " + getLU() + " " + "Notas: " + getNotaUno() + "-" + getNotaDos());
         System.out.println("Promedio: " + promedio() + "-" + leyendaAprueba());
     }
+    
+    
+    
+    
+    
+    
 }

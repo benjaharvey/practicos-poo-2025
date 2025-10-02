@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * Write a description of class Comercio here.
+ * Una clase Comercio que tiene nombre y varios empleados.
  * 
  * @author      Hardoy - Harvey
  * @version     22/9/25
