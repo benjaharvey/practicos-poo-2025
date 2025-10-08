@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Alumno
-comment0.text=\r\n\ Una\ clase\ Alumno\ que\ nos\ permite\ ingresar\ sus\ datos,\ notas,\ calcular\ su\ promedio,\ determinar\ si\ aprobo,\ etc.\r\n\r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 24/08/2025\r\n
+comment0.text=\ Una\ clase\ Alumno\ que\ nos\ permite\ ingresar\ sus\ datos,\ notas,\ calcular\ su\ promedio,\ determinar\ si\ aprobo,\ etc.\r\n\r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 24/08/2025\r\n
 comment1.params=p_lu\ p_nombre\ p_apellido
 comment1.target=Alumno(int,\ java.lang.String,\ java.lang.String)
 comment1.text=\r\n\ @param\ \ \ p_lu\ \ \ \ \ \ \ \ Libreta\ universitaria\ del\ alumno\r\n\ @param\ \ \ p_nombre\ \ \ \ nombre\ del\ alumno\r\n\ @param\ \ \ p_apellido\ \ apellido\ del\ alumno\r\n

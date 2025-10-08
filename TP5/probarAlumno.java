@@ -11,8 +11,8 @@ public class probarAlumno
         
         Alumno nuevoAlumno = new Alumno(123, "Harvey", "Benjamin", 45526737, 2003);
         
-        nuevoAlumno.setNota1(8);
-        nuevoAlumno.setNota2(5);
+        nuevoAlumno.setNotaUno(8);
+        nuevoAlumno.setNotaDos(5);
         
         nuevoAlumno.mostrar();  
     }
