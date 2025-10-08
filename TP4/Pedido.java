@@ -1,9 +1,9 @@
 import java.util.*;
 /**
- * Write a description of class Pedido here.
+ * Una clase que tiene fecha, cliente, productos y un laboratorio.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author      Hardoy - Harvey
+ * @version     22/9/25
  */
 public class Pedido
 {
@@ -12,8 +12,9 @@ public class Pedido
     private Laboratorio laboratorio;
     
     private ArrayList <Producto> productos;
+    
     /**
-     * 
+     * Constructor de la clase Pedido para varios pedidos
      */
     
     public Pedido(Calendar p_fecha, Cliente p_cliente, ArrayList p_productos){
@@ -23,7 +24,7 @@ public class Pedido
     }
     
     /**
-     * 
+     * Constructor de la clase Pedido para un solo pedido
      */
     
     public Pedido(Calendar p_fecha, Cliente p_cliente, Producto p_productos){
@@ -65,9 +66,24 @@ public class Pedido
         return this.productos;
     }
     
+    /**
+     * Metodo que permite agregar un producto a la coleccion
+     * 
+     * @param   p_producto  objeto que se agregara a la colección
+     * @return  devolvera true si pudo insertar el objeto, false en caso contrario
+     */
+    
     public boolean agregarProducto(Producto p_producto){
         return this.getProductos().add(p_producto);
     }
+    
+    
+    /**
+     * Metodo que permite quitar un producto de la coleccion
+     * 
+     * @param   p_producto  objeto que se eliminara de la colección
+     * @return  devolvera true si pudo eliminar el objeto, false en caso contrario
+     */
     
     public boolean quitarProducto(Producto p_producto){
         if(this.getProductos().size() > 1){
@@ -76,6 +92,13 @@ public class Pedido
             return false;
         }
     }
+    
+    
+    /**
+     * Metodo que recorre toda la coleccion, sumando el precio contado de todos los pedidos dentro de la coleccion
+     * 
+     * @return  precio total al contado de todos los pedidos de la coleccion
+     */
     
     public double totalAlContado(){
         double total = 0;
@@ -87,6 +110,13 @@ public class Pedido
         return total;
     }
     
+    
+    /**
+     * Metodo que recorre toda la coleccion, sumando el precio financiado de todos los pedidos dentro de la coleccion
+     * 
+     * @return  precio total financiado de todos los pedidos de la coleccion
+     */
+    
     public double totalFinanciado(){
         double total = 0;
         
@@ -96,6 +126,11 @@ public class Pedido
         
         return total;
     }
+    
+    
+    /**
+     * Metodo que permite visualizar los pedidos almacenados dentro de la coleccion
+     */
     
     public void mostrarPedido(){
         for(int i = 0; i < this.getProductos().size(); i++){

@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=MenuEjemplo
+comment0.text=\r\n\ Esta\ clase\ nos\ permite\ instanciar\ la\ clase\ Empleado,\ haciendo\ las\ operaciones\ a\ traves\ de\ un\ menu\ visual\ b\u00E1sico\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 8/9/2025\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2

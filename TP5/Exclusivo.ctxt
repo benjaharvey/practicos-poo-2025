@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Exclusivo
+comment0.text=\r\n\ Una\ clase\ SemiExclusivo\ que\ representa\ un\ tipo\ de\ cargo\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 13/10/2025\r\n
+comment1.params=p_nombreCargo\ p_sueldoBasico\ p_anioIngreso\ p_horasDocencia\ p_horasInvestigacion\ p_horasExtension
+comment1.target=Exclusivo(java.lang.String,\ double,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ SemiExclusivo\r\n\ \r\n\ @param\ \ \ p_nombreCargo\ \ \ \ \ \ \ \ \ \ \ nombre\ del\ cargo\r\n\ @param\ \ \ p_sueldoBasico\ \ \ \ \ \ \ \ \ \ sueldo\ basico\ asociado\ al\ cargo\r\n\ @param\ \ \ p_anioIngreso\ \ \ \ \ \ \ \ \ \ \ anio\ de\ ingreso\ en\ el\ cargo\r\n\ @param\ \ \ p_horasDocencia\ \ \ \ \ \ \ \ \ horas\ de\ docencia\ en\ el\ cargo\r\n\ @param\ \ \ p_horasInvestigacion\ \ \ \ horas\ de\ investigacion\ en\ el\ cargo\r\n\ @param\ \ \ p_horasExtension\ \ \ \ \ \ \ \ horas\ de\ extension\ en\ el\ cargo\r\n
+comment2.params=p_horasInvestigacion
+comment2.target=void\ setHorasInvestigacion(int)
+comment3.params=p_horasExtension
+comment3.target=void\ setHorasExtension(int)
+comment4.params=
+comment4.target=int\ getHorasInvestigacion()
+comment5.params=
+comment5.target=int\ getHorasExtension()
+comment6.params=
+comment6.target=void\ mostrarCargo()
+comment6.text=\r\n\ Metodo\ para\ mostrar\ datos\ del\ cargo\ y\ las\ horas\ de\ investigacion\ del\ semiexclusivo\r\n
+numComments=7

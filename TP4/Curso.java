@@ -1,6 +1,6 @@
 import java.util.*;
 /**
- * Una clase Curso que 
+ * Una clase Curso que tiene nombre y alumnos.
  * 
  * @author  Hardoy - Harvey 
  * @version 
