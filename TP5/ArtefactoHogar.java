@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ArtefactoHogar
+public abstract class ArtefactoHogar
 {
     private String marca;
     private float precio;
@@ -41,5 +41,14 @@ public class ArtefactoHogar
         return this.stock;
     }
     
+    public void imprimir(){
+        System.out.println("Marca: " + this.getMarca() + "  -   Precio: " +  + this.getPrecio() + "  -   Stock: " + this.getStock());
+    }
+
+    public float cuotaCredito(int p_cuotas, float p_interes){
+        float precioMasInteres = this.getPrecio() + ((this.getPrecio() * p_interes) / 100);
+        return precioMasInteres / p_cuotas;
+    }
     
+    public abstract float creditoConCondicional(int p_cuotas, float p_interes);
 }

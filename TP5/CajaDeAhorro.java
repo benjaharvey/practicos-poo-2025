@@ -62,20 +62,14 @@ public class CajaDeAhorro extends CuentaBancaria
      * @param   p_importe   Cantidad de dinero que se desea extraer del saldo de la caja
      */
     
-    public void extraer(double p_importe){
+    public boolean extraer(double p_importe){
         if(puedeExtraer(p_importe) == true){
             this.setSaldo(this.getSaldo() - p_importe);
             this.setExtraccionesPosibles(this.getExtraccionesPosibles() - 1);
+            
+            return true;
         } else {
-            
-            if(this.getExtraccionesPosibles() == 0){
-                System.out.println("No tiene habilitadas mas extracciones!");
-            }
-            
-            if(p_importe > this.getSaldo()){
-                System.out.println("No puede extraer mas que el saldo!");
-            }
-            
+            return false;
         }
     }
     

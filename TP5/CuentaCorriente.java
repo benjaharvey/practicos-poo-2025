@@ -7,8 +7,6 @@
  */
 public class CuentaCorriente extends CuentaBancaria
 {
-    
-    
     private double limiteDescubierto;
     
     /**
@@ -23,16 +21,16 @@ public class CuentaCorriente extends CuentaBancaria
         this.setLimiteDescubierto(500);
     }
     
-    
     /**
      * Segundo constructor de la clase CuentaCorriente, inicializa el saldo en 0
      *
      * @param   p_nroCuenta     Numero de cuenta del titular de la cuenta bancaria
      * @param   p_titular       Datos personales del titular de la cuenta bancaria
+     * @param   p_saldo         Saldo inicial de la cuenta bancaria
      */
     
     public CuentaCorriente(int p_nroCuenta, Persona p_titular, double p_saldo){
-        super(p_nroCuenta, p_titular, 0);
+        super(p_nroCuenta, p_titular, p_saldo);
         this.setLimiteDescubierto(500);
     }
     
@@ -59,29 +57,19 @@ public class CuentaCorriente extends CuentaBancaria
     }
     
     /**
-     * Metodo que realizara la extracción en el saldo de la cuenta corriente, recibira el importe a extraer mediante el parametro p_importe
-     * 
-     * @param   p_importe   Importe que sera extraido del saldo 
-     */
-    
-    private void extraccion(double p_importe){
-        this.setSaldo(this.getSaldo() - p_importe);
-    }
-    
-    /**
      * Metodo que determina si la extracción supera a el saldo existente en la cuenta corriente
      * 
      * @param   p_importe   Cantidad de dinero que se desea extraer del saldo de la caja
      */
     
-    public void extraer(double p_importe){ 
-    
+    public boolean extraer(double p_importe){ 
         if(puedeExtraer(p_importe) == true){
-            extraccion(p_importe);
+            this.setSaldo(this.getSaldo() - p_importe);
+            return true;
         } else {
-            System.out.println("El importe de extracción sobrepasa el límite de descubierto!"); 
-        } 
-    }
+            return false;
+        }
+    }   
     
     /**
      * Metodo que permite visualizar al titular de la caja de ahorro, cuanto saldo posee y cual es su limite descubierto
@@ -89,8 +77,7 @@ public class CuentaCorriente extends CuentaBancaria
     
     public void mostrar(){ 
         System.out.println("- Cuenta Corriente -"); 
-        System.out.println("Nro. Cuenta: " + this.getNroCuenta() + " - Saldo: " + this.getSaldo());
-        System.out.println("Titular: " + this.getTitular().nomYApe()); 
+        super.mostrar();
         System.out.println("Descubierto: " + this.getLimiteDescubierto());
     } 
 }

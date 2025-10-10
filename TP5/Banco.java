@@ -16,6 +16,8 @@ public class Banco
         nuevaCaja.mostrar();
         
         nuevaCaja.extraer(25000);
+        
+        
         nuevaCaja.mostrar();
         
         nuevaCaja.depositar(2000000);
@@ -27,5 +29,6 @@ public class Banco
         nuevaCuenta.extraer(25000);
         
         nuevaCuenta.mostrar();
+        
     }
 }
