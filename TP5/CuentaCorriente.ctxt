@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=CuentaCorriente
+comment0.text=\r\n\ Una\ clase\ CuentaCorriente\ que\ nos\ permite\ instanciar\ y\ gestionar\ una\ cuenta\ corriente\ de\ banco\ por\ medio\ de\ los\ metodos\ que\ fueron\ definidos\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 8/9/2025\r\n
+comment1.params=p_nroCuenta\ p_titular
+comment1.target=CuentaCorriente(int,\ Persona)
+comment1.text=\r\n\ Primer\ constructor\ de\ la\ clase\ CuentaCorriente,\ inicializa\ el\ saldo\ en\ 0\r\n\r\n\ @param\ \ \ p_nroCuenta\ \ \ \ \ Numero\ de\ cuenta\ del\ titular\ de\ la\ cuenta\ bancaria\r\n\ @param\ \ \ p_titular\ \ \ \ \ \ \ Datos\ personales\ del\ titular\ de\ la\ cuenta\ bancaria\r\n
+comment2.params=p_nroCuenta\ p_titular\ p_saldo
+comment2.target=CuentaCorriente(int,\ Persona,\ double)
+comment2.text=\r\n\ Segundo\ constructor\ de\ la\ clase\ CuentaCorriente,\ inicializa\ el\ saldo\ en\ 0\r\n\r\n\ @param\ \ \ p_nroCuenta\ \ \ \ \ Numero\ de\ cuenta\ del\ titular\ de\ la\ cuenta\ bancaria\r\n\ @param\ \ \ p_titular\ \ \ \ \ \ \ Datos\ personales\ del\ titular\ de\ la\ cuenta\ bancaria\r\n\ @param\ \ \ p_saldo\ \ \ \ \ \ \ \ \ Saldo\ inicial\ de\ la\ cuenta\ bancaria\r\n
+comment3.params=p_limite
+comment3.target=void\ setLimiteDescubierto(double)
+comment4.params=
+comment4.target=double\ getLimiteDescubierto()
+comment5.params=p_importe
+comment5.target=boolean\ puedeExtraer(double)
+comment5.text=\r\n\ Metodo\ que\ nos\ permite\ calcular\ si\ es\ posible\ o\ no\ realizar\ una\ extracci\u00F3n\ de\ la\ cuenta\ corriente\r\n\ \r\n\ @return\ boolean\r\n
+comment6.params=p_importe
+comment6.target=boolean\ extraer(double)
+comment6.text=\r\n\ Metodo\ que\ determina\ si\ la\ extracci\u00F3n\ supera\ a\ el\ saldo\ existente\ en\ la\ cuenta\ corriente\r\n\ \r\n\ @param\ \ \ p_importe\ \ \ Cantidad\ de\ dinero\ que\ se\ desea\ extraer\ del\ saldo\ de\ la\ caja\r\n
+comment7.params=
+comment7.target=void\ mostrar()
+comment7.text=\r\n\ Metodo\ que\ permite\ visualizar\ al\ titular\ de\ la\ caja\ de\ ahorro,\ cuanto\ saldo\ posee\ y\ cual\ es\ su\ limite\ descubierto\r\n
+numComments=8

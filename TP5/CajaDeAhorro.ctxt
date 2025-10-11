@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=CajaDeAhorro
+comment0.text=\r\n\ Una\ clase\ CajaDeAhorro\ que\ nos\ permite\ instanciar\ y\ gestionar\ una\ caja\ de\ ahorro\ de\ banco\ por\ medio\ de\ los\ metodos\ definidos\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 08/09/25\r\n
+comment1.params=p_nroCuenta\ p_titular
+comment1.target=CajaDeAhorro(int,\ Persona)
+comment1.text=\r\n\ Primer\ constructor\ de\ la\ clase\ CajaDeAhorro,\ inicializa\ el\ saldo\ en\ 0\r\n\r\n\ @param\ \ \ p_nroCuenta\ \ \ \ \ Numero\ de\ cuenta\ del\ titular\ de\ la\ caja\ de\ ahorro\r\n\ @param\ \ \ p_titular\ \ \ \ \ \ \ Datos\ personales\ del\ titular\ de\ la\ caja\ de\ ahorro\r\n
+comment2.params=p_nroCuenta\ p_titular\ p_saldo
+comment2.target=CajaDeAhorro(int,\ Persona,\ double)
+comment2.text=\r\n\ Segundo\ constructor\ de\ la\ clase\ CajaDeAhorro,\ inicializa\ el\ saldo\ mediante\ el\ parametro\ p_saldo\r\n\r\n\ @param\ \ \ p_nroCuenta\ \ \ \ \ Numero\ de\ cuenta\ del\ titular\ de\ la\ caja\ de\ ahorro\r\n\ @param\ \ \ p_titular\ \ \ \ \ \ \ Datos\ personales\ del\ titular\ de\ la\ caja\ de\ ahorro\r\n\ @param\ \ \ p_saldo\ \ \ \ \ \ \ \ \ Saldo\ inicial\ con\ el\ que\ contara\ la\ caja\ de\ ahorro\r\n
+comment3.params=p_extracciones
+comment3.target=void\ setExtraccionesPosibles(int)
+comment4.params=
+comment4.target=int\ getExtraccionesPosibles()
+comment5.params=p_importe
+comment5.target=boolean\ puedeExtraer(double)
+comment5.text=\r\n\ Metodo\ que\ nos\ permite\ calcular\ si\ es\ posible\ o\ no\ realizar\ una\ extracci\u00F3n\ de\ la\ caja\ de\ ahorro\r\n\ \r\n\ @return\ boolean\r\n
+comment6.params=p_importe
+comment6.target=boolean\ extraer(double)
+comment6.text=\r\n\ Metodo\ que\ determina\ si\ la\ extracci\u00F3n\ supera\ a\ el\ saldo\ existente\ en\ la\ caja\ o\ si\ quedan\ aun\ extracciones\ posibles\r\n\ \r\n\ @param\ \ \ p_importe\ \ \ Cantidad\ de\ dinero\ que\ se\ desea\ extraer\ del\ saldo\ de\ la\ caja\r\n
+comment7.params=
+comment7.target=void\ mostrar()
+comment7.text=\r\n\ Metodo\ que\ permite\ visualizar\ al\ titular\ de\ la\ caja\ de\ ahorro,\ cuanto\ saldo\ posee\ y\ cuantas\ extracciones\ posibles\ le\ quedan\r\n
+numComments=8

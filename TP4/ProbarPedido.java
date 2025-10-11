@@ -1,9 +1,9 @@
 import java.util.*;
 /**
- * Una clase que nos permite instanciar el objeto Pedido, para asi poder probar que sus metodos funcionen correctamente
+ * Write a description of class ProbarPedido here.
  * 
- * @author      Hardoy - Harvey
- * @version     22/9/2025
+ * @author (your name) 
+ * @version (a version number or a date)
  */
 public class ProbarPedido
 {

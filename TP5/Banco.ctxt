@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Banco
+comment0.text=\r\n\ Clase\ que\ nos\ permite\ probar\ los\ metodos\ definidos\ en\ las\ clases\ CuentaCorriente\ y\ CajaDeAhorro\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\r\n\ @version\ \ \ \ \ 8/9/2025\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

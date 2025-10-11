@@ -114,7 +114,6 @@ public class aplicacionBanco
                     }
                     
                     banco.mostrar();
-                    banco.mostrarSueldosAPagar();
                     break;
                 case 5:
                     if (banco == null){

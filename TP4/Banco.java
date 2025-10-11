@@ -1,6 +1,6 @@
 import java.util.*;
 /**
- * Una clase Banco que tiene empleados, una localidad y mas datos.
+ * Una clase Banco que tiene empleados, una localidad y mas datos. Puede listar sueldos, calcular total a pagar en base a los mismos y mostrar estos datos.
  * 
  * @author      Hardoy - Harvey
  * @version     22/09/25
@@ -10,8 +10,12 @@ public class Banco
     private String nombre;
     private int nroSucursal;
     private Localidad localidad;
+<<<<<<< HEAD
     private ArrayList empleados;
     private ArrayList <CuentaBancaria> cuentasBancarias;
+=======
+    private ArrayList <Empleado> empleados;
+>>>>>>> 1d236d4b34e7bb3de9672db74e0c1a625ef18a3f
 
     /**
      * Constructor de la clase Banco para un empleado
@@ -27,7 +31,6 @@ public class Banco
         this.setNroSucursal(p_nroSucursal);
         this.setEmpleados(new ArrayList());
         this.agregarEmpleado(p_empleado);
-        this.setCuentasBancarias(new ArrayList());
     }
 
     /**
@@ -43,15 +46,6 @@ public class Banco
         this.setLocalidad(p_localidad);
         this.setNroSucursal(p_nroSucursal);
         this.setEmpleados(p_empleados);
-        this.setCuentasBancarias(new ArrayList());
-    }
-    
-    public Banco(String p_nombre, Localidad p_localidad, int p_nroSucursal, ArrayList <Empleado> p_empleados, ArrayList <CuentaBancaria> p_cuentas){
-        this.setNombre(p_nombre);
-        this.setLocalidad(p_localidad);
-        this.setNroSucursal(p_nroSucursal);
-        this.setEmpleados(p_empleados);
-        this.setCuentasBancarias(p_cuentas);
     }
     
     //Setters
@@ -67,9 +61,6 @@ public class Banco
     private void setEmpleados(ArrayList <Empleado> p_empleados){
         this.empleados = p_empleados;
     }
-    private void setCuentasBancarias(ArrayList <CuentaBancaria> p_cuentasBancarias){
-        this.cuentasBancarias = p_cuentasBancarias;
-    }
     
     //Getters
     public String getNombre(){
@@ -84,28 +75,10 @@ public class Banco
     public ArrayList <Empleado> getEmpleados(){
         return this.empleados;
     }
-    public ArrayList <CuentaBancaria> getCuentasBancarias(){
-        return this.cuentasBancarias;
-    }
     
-    /**
-     * Metodo para agregar un empleado a la coleccion
-     * 
-     * @param   p_empleado  objeto empleado que se quiere agregar
-     * 
-     * @return devuelve true o false dependiendo de si se agrego o no
-     */
     public boolean agregarEmpleado(Empleado p_empleado){
         return this.getEmpleados().add(p_empleado);
     }
-    
-    /**
-     * Metodo para quitar un empleado de la coleccion
-     * 
-     * @param   p_empleado  objeto empleado que se quiere quitar
-     * 
-     * @return  devuelve true o false dependiendo de si se quito o no
-     */
     public boolean quitarEmpleado(Empleado p_empleado){
         if(this.getEmpleados().size() > 1){
             return this.getEmpleados().remove(p_empleado);
@@ -148,128 +121,13 @@ public class Banco
     }
     
     /**
-     * 
-     */
-    public void mostrarSueldosAPagar(){
-        this.listarSueldos();
-        System.out.println("\nTOTAL A PAGAR: -------------------------------------------- $" + this.sueldosAPagar());
-        
-    }
-    
-    /**
      * Metodo que muestra informacion del banco, de los empleados y del total a pagarle a los mismos.
      */
     public void mostrar(){
         System.out.println("\nBanco: " + this.getNombre() + "\t\tSucursal: " + this.getNroSucursal());
         System.out.println("Localidad: " + this.getLocalidad().getNombre() + "\tProvincia: " + this.getLocalidad().getProvincia());
+        this.listarSueldos();
+        System.out.println("\nTOTAL A PAGAR: -------------------------------------------- $" + this.sueldosAPagar());
     }   
-    
-    /**
-     * Metodo para agregar una cuenta bancaria a la lista
-     * 
-     * @return  devuelve true o false dependiendo de si se agrego o no
-     */
-        public boolean agregarCuentaBancaria(CuentaBancaria p_cuenta){
-        return this.getCuentasBancarias().add(p_cuenta);
-    }
-    
-    /**
-     * Metodo para quitar una cuenta bancaria de la lista
-     * 
-     * @return  devuelve true o false dependiendo de si se quito o no
-     */
-    public boolean quitarCuentaBancaria(CuentaBancaria p_cuenta){
-        if(this.getCuentasBancarias().size() > 0){
-            return this.getCuentasBancarias().remove(p_cuenta);
-        } else {
-            return false;
-        }
-    }
-    
-    /**
-     * Metodo para listar las cuentas con saldo cero
-     */
-    public void listarCuentasConSaldoCero(){
-        int contador = 0;
-        System.out.println("\n---------------------------------------------------------------------------------------------------------------------------");
-        System.out.println("Cuentas sin saldo: ");
-        System.out.println("--Cuenta-----------Apellido y Nombre");
-        for(CuentaBancaria cuenta: cuentasBancarias){
-            if(cuenta.getSaldo() == 0){
-                 System.out.println(cuenta.getNroCuenta() + "\t\t" + cuenta.getTitular().apeYNom());
-            }
-        }
-    }
-    
-    /**
-     * Metodo para listar las cuentas con saldo cero
-     */
-    public void contarCuentasSaldoCero(){
-        int contador = 0;
-        System.out.print("Cuentas saldo cero: ");
-        for(CuentaBancaria cuenta: cuentasBancarias){
-            if(cuenta.getSaldo() == 0){
-                contador++;
-            }
-        }
-        System.out.print(contador);
-    }
-    
-    /**
-     * Metodo para guardar en una lista los titulares de cuenta
-     * 
-     * @return  devuelve 
-     */
-    public HashSet <Persona> listaDeTitulares(){
-        HashSet <Persona> titulares = new HashSet <> ();
         
-        for(int i = 0; i <this.getCuentasBancarias().size() ; i++){
-            CuentaBancaria cuenta = (CuentaBancaria)this.getCuentasBancarias().get(i);
-            Persona persona = cuenta.getTitular();
-            titulares.add(persona);
-        }
-        
-        return titulares;
-    }
-
-    /**
-     * Metodo para contar cuantos cuentas tienen saldo activo
-     * 
-     * @return  devuelve un entero dado por la cantidad de cuentas activas
-     */
-    private int cuentasSaldoActivo(){
-        int cantidad = 0;
-        
-        if(this.getCuentasBancarias() != null){
-            for(CuentaBancaria cuenta : this.getCuentasBancarias()){
-                if(cuenta.getSaldo() > 0){
-                    cantidad++;
-                }
-            }
-        }
-        
-        return cantidad;
-    }
-    
-    /**
-     * Metodo para mostrar un resumen de las cuentas bancarias
-     */
-    public void mostrarResumen(){
-        HashSet<Persona> titulares = listaDeTitulares();
-        
-        mostrar();
-        System.out.println("************************************** \n" + "  RESUMEN DE CUENTAS BANCARIAS  \n" + "************************************** ");
-        
-        System.out.println("Numero total de Cuentas Bancarias: " + this.getCuentasBancarias().size());
-        System.out.println("Cuentas Activas: " + this.cuentasSaldoActivo());
-        this.contarCuentasSaldoCero();
-        this.listarCuentasConSaldoCero();
-        System.out.println("----------------------------------------------------------------------------------------------------------------------------");
-        System.out.print("Listado de clientes: ");
-        for(Persona titular: titulares){
-            System.out.print(titular.nomYApe()+ "; ");
-        }
-        System.out.println("\n----------------------------------------------------------------------------------------------------------------------------");
-    }
-    
 }

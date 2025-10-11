@@ -1,5 +1,4 @@
-/**
- * Una clase Alumno que nos permite ingresar sus datos, notas, calcular su promedio, determinar si aprobo, etc.
+/** Una clase Alumno que nos permite ingresar sus datos, notas, calcular su promedio, determinar si aprobo, etc.
  *
  * @author      Hardoy - Harvey 
  * @version     24/08/2025

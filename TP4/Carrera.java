@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.*;
 /**
- * Una clase ejecutable Carrera para instanciar a cursos y alumnos
+ * Una clase
  * 
  * @author Hardoy - Harvey 
  * @version 

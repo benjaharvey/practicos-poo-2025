@@ -10,11 +10,12 @@ public class Elipse extends FiguraGeometrica
     private double sEjeMenor;
     private double sEjeMayor;
     private Punto centro;
-    
-    public Elipse(Punto p_centro, double p_ejeMenor, double p_ejeMayor){
+
+    public Elipse(double p_ejeMenor, double p_ejeMayor, Punto p_centro){
         super(p_centro);
         this.setEjeMayor(p_ejeMayor);
         this.setEjeMenor(p_ejeMenor);
+
     }
     
     private void setEjeMayor(double p_ejeMayor){

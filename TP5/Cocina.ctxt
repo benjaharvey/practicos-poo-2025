@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Cocina
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Cocina\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=p_hornallas
+comment1.target=void\ setHornallas(int)
+comment2.params=p_calorias
+comment2.target=void\ setCalorias(int)
+comment3.params=p_dimensiones
+comment3.target=void\ setDimensiones(java.lang.String)
+comment4.params=
+comment4.target=int\ getHornallas()
+comment5.params=
+comment5.target=int\ getCalorias()
+comment6.params=
+comment6.target=java.lang.String\ getDimensiones()
+comment7.params=p_marca\ p_precio\ p_stock\ p_hornallas\ p_calorias\ p_dimensiones
+comment7.target=Cocina(java.lang.String,\ float,\ int,\ int,\ int,\ java.lang.String)
+comment8.params=p_cuotas\ p_interes
+comment8.target=float\ creditoConCondicional(int,\ float)
+comment9.params=
+comment9.target=void\ imprimir()
+numComments=10
