@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Hotel
+comment0.text=\r\n\ Clase\ Hotel\ que\ representa\ un\ tipo\ espec\u00EDfico\ de\ alojamiento\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 20/11/2025\r\n
+comment1.params=p_nombre\ p_precioBase\ p_diasAlquiler\ p_tipoHabitacion
+comment1.target=Hotel(java.lang.String,\ double,\ int,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Hotel\r\n\ \r\n\ @param\ \ \ p_nombre\ \ \ \ \ \ \ \ \ \ \ \ nombre\ del\ hotel\r\n\ @param\ \ \ p_precioBase\ \ \ \ \ \ \ \ precio\ base\ del\ hotel\r\n\ @param\ \ \ p_diasAlquiler\ \ \ \ \ \ d\u00EDas\ de\ alquiler\ del\ hotel\r\n\ @param\ \ \ p_tipoHabitacion\ \ \ \ tipo\ de\ habitacion\ (single/double)\r\n
+comment2.params=p_tipoHabitacion
+comment2.target=void\ setTipoHabitacion(java.lang.String)
+comment2.text=\r\n\ Establece\ el\ tipo\ de\ habitacion\r\n
+comment3.params=
+comment3.target=java.lang.String\ getTipoHabitacion()
+comment3.text=\r\n\ Obtiene\ el\ tipo\ de\ habitacion\ del\ hotel\r\n\ \r\n\ @return\ \ tipo\ de\ habitacion\ del\ hotel\r\n
+comment4.params=
+comment4.target=double\ costo()
+comment4.text=\r\n\ Calculo\ para\ saber\ el\ costo\ base\ +\ adicionales\ del\ hotel\r\n\ \r\n\ @return\ \ devuelve\ el\ costo\ total\ del\ hotel\r\n
+comment5.params=p_alojamiento
+comment5.target=int\ contar(java.lang.String)
+comment5.text=\r\n\ Permite\ contar\ este\ tipo\ de\ alojamiento\r\n\ \r\n\ @return\ \ devuelve\ 1\ para\ sumar\ a\ un\ contador\r\n
+comment6.params=
+comment6.target=void\ liquidar()
+comment6.text=\r\n\ Liquidar\ alojamiento\ y\ servicios\ por\ alojamiento\r\n
+numComments=7

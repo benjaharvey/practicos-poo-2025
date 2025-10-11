@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=FiguraGeometrica
+comment0.text=\r\n\ Una\ clase\ abstracta\ de\ una\ figura\ geometrica\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 20/10/2025\r\n
+comment1.params=p_origen
+comment1.target=FiguraGeometrica(Punto)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ FiguraGeometrica\r\n
+comment2.params=p_origen
+comment2.target=void\ setOrigen(Punto)
+comment3.params=
+comment3.target=Punto\ getOrigen()
+comment4.params=
+comment4.target=java.lang.String\ nombreFigura()
+comment5.params=
+comment5.target=double\ superficie()
+comment6.params=
+comment6.target=void\ mostrarSuperficie()
+comment6.text=\r\n\ Metodo\ para\ mostrar\ el\ total\ de\ superficie\ de\ la\ figura\r\n
+numComments=7

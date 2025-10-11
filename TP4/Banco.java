@@ -10,7 +10,7 @@ public class Banco
     private String nombre;
     private int nroSucursal;
     private Localidad localidad;
-    private ArrayList <Empleado> empleados;
+    private ArrayList empleados;
     private ArrayList <CuentaBancaria> cuentasBancarias;
 
     /**

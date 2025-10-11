@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Circulo
+comment0.text=\r\n\ Una\ clase\ Circulo\ que\ nos\ permite\ crear\ un\ circulo,\ calcular\ la\ distancia\ que\ existe\ entre\ 2\ circulos\ y\ determinar\ cual\ de\ los\ 2\ circulos\ es\ el\ mayor\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\r\n\ @version\ \ \ \ \ 8/9/25\r\n
+comment1.params=pCentro\ pRadio
+comment1.target=Circulo(Punto,\ double)
+comment2.params=
+comment2.target=java.lang.String\ nombreFigura()
+numComments=3

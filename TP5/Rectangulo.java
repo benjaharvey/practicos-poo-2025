@@ -5,7 +5,7 @@
  * @author  Hardoy - Harvey
  * @version 08/09/25
  */
-public class Rectangulo
+public class Rectangulo extends FiguraGeometrica
 {
     // instance variables
     private Punto origen;
@@ -20,7 +20,7 @@ public class Rectangulo
      */
     public Rectangulo(Punto p_origen, double p_ancho, double p_alto)
     {
-        this.setOrigen(p_origen);
+        super(p_origen);
         this.setAncho(p_ancho);
         this.setAlto(p_alto);
     }
@@ -33,7 +33,7 @@ public class Rectangulo
      */
     public Rectangulo(double p_ancho, double p_alto)
     {
-        this.setOrigen(new Punto(0.0, 0.0));
+        super(new Punto(0.0, 0.0));
         this.setAncho(p_ancho);
         this.setAlto(p_alto);
     }
