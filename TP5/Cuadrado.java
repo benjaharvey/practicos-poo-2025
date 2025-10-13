@@ -1,8 +1,8 @@
 /**
  * Una clase Cuadrado que es subclase de Rectangulo.
  * 
- * @author  Hardoy - Harvey 
- * @version 
+ * @author      Hardoy - Harvey
+ * @version     20/10/2025 
  */
 public class Cuadrado extends Rectangulo
 {
@@ -24,7 +24,7 @@ public class Cuadrado extends Rectangulo
      */
     public String nombreFigura()
     {
-        return "**********Cuadrado**********";
+        return "Cuadrado";
     }
     
     /**

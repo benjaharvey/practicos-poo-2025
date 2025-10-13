@@ -5,17 +5,17 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Elipse
+public class Elipse extends FiguraGeometrica
 {
     private double sEjeMenor;
     private double sEjeMayor;
-    
     private Punto centro;
-    
+
     public Elipse(double p_ejeMenor, double p_ejeMayor, Punto p_centro){
+        super(p_centro);
         this.setEjeMayor(p_ejeMayor);
         this.setEjeMenor(p_ejeMenor);
-        this.setCentro(p_centro);
+
     }
     
     private void setEjeMayor(double p_ejeMayor){

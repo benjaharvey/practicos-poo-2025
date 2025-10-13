@@ -8,14 +8,11 @@
 public class Circulo extends Elipse
 {
     private double radio;
-    
     private Punto centro;
     
     public Circulo(double pRadio, Punto pCentro){
         super(pRadio, pRadio, pCentro);
     }
-    
-    
     
     public String nombreFigura(){
         return "CIRCULO";

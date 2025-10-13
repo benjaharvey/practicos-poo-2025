@@ -10,7 +10,12 @@ public class Banco
     private String nombre;
     private int nroSucursal;
     private Localidad localidad;
+<<<<<<< HEAD
+    private ArrayList empleados;
+    private ArrayList <CuentaBancaria> cuentasBancarias;
+=======
     private ArrayList <Empleado> empleados;
+>>>>>>> 1d236d4b34e7bb3de9672db74e0c1a625ef18a3f
 
     /**
      * Constructor de la clase Banco para un empleado

@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Triangulo
+comment0.text=\r\n\ Una\ clase\ Triangulo\ que\ hereda\ de\ FiguraGeometrica.\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\r\n\ @version\ \ \ \ \ 20/10/2025\ \r\n
+comment1.params=p_origen\ p_base\ p_altura
+comment1.target=Triangulo(Punto,\ double,\ double)
+comment1.text=\r\n\ Constructor\ del\ objeto\ Triangulo\r\n\ \r\n\ @param\ \ \ p_origen\ \ \ \ origen\ del\ triangulo\ del\ tipo\ Punto\r\n\ @param\ \ \ p_base\ \ \ \ \ \ base\ del\ triangulo\r\n\ @param\ \ \ p_altura\ \ \ \ altura\ del\ triangulo\r\n
+comment2.params=p_base
+comment2.target=void\ setBase(double)
+comment3.params=p_altura
+comment3.target=void\ setAltura(double)
+comment4.params=
+comment4.target=double\ getBase()
+comment5.params=
+comment5.target=double\ getAltura()
+comment6.params=
+comment6.target=java.lang.String\ nombreFigura()
+comment6.text=\r\n\ Metodo\ para\ mostrar\ el\ nombre\ Triangulo\r\n\ \r\n\ @return\ \ devuelve\ el\ nombre\ de\ la\ figura\ geometrica\r\n
+comment7.params=
+comment7.target=double\ superficie()
+comment7.text=\r\n\ Metodo\ para\ calcular\ la\ superficie\ del\ triangulo\r\n\ \r\n\ @return\ \ devuelve\ un\ flotante\ que\ equivale\ al\ total\ de\ la\ superficie\ del\ triangulo\r\n
+numComments=8
