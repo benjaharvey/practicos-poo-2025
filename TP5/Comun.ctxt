@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Comun
+comment0.text=\r\n\ Una\ clase\ Comun\ que\ es\ un\ tipo\ de\ etiqueta\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\r\n\ @version\ \ \ \ \ 20/10/2025\r\n
+comment1.params=p_costo\ p_plus
+comment1.target=Comun(double,\ double)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Comun\r\n\ \r\n\ @param\ \ \ p_costo\ \ \ \ \ costo\ de\ la\ etiqueta\r\n\ @param\ \ \ p_plus\ \ \ \ \ \ plus\ por\ el\ disenio\ de\ la\ etiqueta\r\n
+comment2.params=p_plus
+comment2.target=void\ setPlus(double)
+comment3.params=
+comment3.target=double\ getPlus()
+comment4.params=q
+comment4.target=double\ precio(int)
+comment4.text=\r\n\ Calcula\ el\ precio\ en\ base\ a\ un\ precio\ base\ que\ es\ 100\ y\ el\ numero\ de\ unidades\ compradas\r\n\ \r\n\ @param\ \ \ q\ \ \ cantidad\ de\ etiquetas\r\n\ @return\ \ devuelve\ el\ precio\ total\ de\ las\ etiquetas\r\n
+comment5.params=q
+comment5.target=double\ descuento(int)
+comment5.text=\r\n\ Calcula\ el\ descuento\ en\ base\ a\ la\ cantidad\ de\ unidades\ compradas\r\n\ \r\n\ @param\ \ \ q\ \ \ cantidad\ \ de\ etiquetas\r\n\ @return\ \ devuelve\ el\ valor\ del\ descuento\ a\ hacer\r\n
+comment6.params=
+comment6.target=java.lang.String\ tipo()
+comment6.text=\r\n\ Metodo\ para\ saber\ que\ se\ trata\ de\ una\ etiqueta\ comun\r\n\ \r\n\ @return\ \ \ \ \ \ devuelve\ una\ cadena\ que\ dice\ comun\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ Metodo\ para\ mostrar\ una\ cadena\ con\ el\ tipo\ de\ etiqueta\ y\ su\ informacion\r\n\ \r\n\ @return\ \ \ devuelve\ una\ cadena\ con\ la\ informacion\ del\ objeto\r\n
+numComments=8

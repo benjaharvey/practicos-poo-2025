@@ -115,6 +115,11 @@ public abstract class Alojamiento {
         return this.getServicios().remove(p_servicio);
     }
     
+    /**
+     * Metodo abstracto para que las clases hijas implementen el metodo contar
+     * 
+     * @return  cuenta segun el alojamiento
+     */
     public abstract int contar(String p_alojamiento);
     
     /**

@@ -12,6 +12,7 @@ comment11.target=boolean\ quitarServicio(Servicio)
 comment11.text=\r\n\ Quitar\ un\ servicio\ de\ la\ lista\ de\ servicios\r\n\ \r\n\ @return\ \ true\ o\ false\ dependiendo\ de\ si\ se\ quito\ o\ no\r\n
 comment12.params=p_alojamiento
 comment12.target=int\ contar(java.lang.String)
+comment12.text=\r\n\ Metodo\ abstracto\ para\ que\ las\ clases\ hijas\ implementen\ el\ metodo\ contar\r\n\ \r\n\ @return\ \ cuenta\ segun\ el\ alojamiento\r\n
 comment13.params=
 comment13.target=double\ costo()
 comment13.text=\r\n\ Calcula\ el\ costo\ del\ alojamiento\ generico\r\n\ \r\n\ @return\ \ devuelve\ el\ costo\ total\ del\ alojamiento\ generico\r\n
