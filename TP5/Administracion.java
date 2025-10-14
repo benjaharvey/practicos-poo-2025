@@ -12,8 +12,8 @@ public class Administracion
         
         FiguraGeometrica cuadrado = new Cuadrado(punto, 8);
         FiguraGeometrica triangulo = new Triangulo(punto, 4, 5);
-        FiguraGeometrica circulo = new Circulo(punto, 7);
-        FiguraGeometrica elipse = new Elipse(punto, 6, 3);
+        FiguraGeometrica circulo = new Circulo(7, punto);
+        FiguraGeometrica elipse = new Elipse(6, 3, punto);
         
         Jardin jardin = new Jardin("Bichito de Luz");
         jardin.agregarFigura(cuadrado);

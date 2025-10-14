@@ -23,7 +23,6 @@ public class Cocina extends ArtefactoHogar
         this.dimensiones = p_dimensiones;
     }
     
-    
     public int getHornallas(){
         return this.hornallas;
     }
@@ -47,7 +46,7 @@ public class Cocina extends ArtefactoHogar
     
     
     public float creditoConCondicional(int p_cuotas, float p_interes){
-        return 0;
+        return super.cuotaCredito(p_cuotas, p_interes);
     }
     
     
@@ -57,5 +56,7 @@ public class Cocina extends ArtefactoHogar
         System.out.println("Hornallas: " + this.getHornallas());
         System.out.println("Calorias: " + this.getCalorias());
         System.out.println("Dimensiones: " + this.getDimensiones());
+        
+        
     }
 }
