@@ -1,20 +1,26 @@
 #BlueJ class context
 comment0.target=Individuo
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Individuo\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Una\ clase\ Individuo,\ que\ nos\ permitira\ definir\ las\ operaciones\ necesarias\ para\ luego\ trabajar\ con\ la\ clase\ Zoologico\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\r\n\ @version\ \ \ \ \ 20/10/25\r\n
 comment1.params=p_persona
 comment1.target=void\ setPersona(Persona)
 comment2.params=
 comment2.target=Persona\ getPersona()
 comment3.params=p_fecha\ p_persona
 comment3.target=Individuo(java.util.Calendar,\ Persona)
+comment3.text=\r\n\ Metodo\ constructor\ de\ la\ clase\ Individuo\r\n\ \r\n\ @param\ \ \ p_fecha\ \ \ \ \ Fecha\ en\ la\ que\ el\ individuo\ visitara\ el\ zoologico\r\n\ @param\ \ \ p_persona\ \ \ Instancia\ de\ la\ clase\ Persona,\ que\ contendra\ los\ datos\ del\ individuo\ que\ visita\ el\ zoologico\r\n
 comment4.params=
 comment4.target=java.lang.String\ tipoVisitante()
+comment4.text=\r\n\ Metodo\ que\ devuelve\ que\ tipo\ de\ visitante\ ingreso\ al\ zoologico\r\n\ \r\n\ @return\ \ Devuelve\ el\ tipo\ de\ visitante\ que\ ingreso\ al\ zoologico,\ en\ este\ caso\ un\ individuo\r\n
 comment5.params=
 comment5.target=double\ entrada()
+comment5.text=\r\n\ Metodo\ que\ devuelve\ el\ costo\ de\ la\ entrada\ al\ zoologico\r\n\ \r\n\ @return\ \ Costo\ de\ la\ entrada\ al\ zoologico\r\n
 comment6.params=
 comment6.target=void\ mostrar()
+comment6.text=\r\n\ Metodo\ que\ muestra\ los\ datos\ del\ individuo\r\n
 comment7.params=p_fecha\ p_visitante
 comment7.target=void\ listarPorFecha(java.util.Calendar,\ java.lang.String)
+comment7.text=\r\n\ Metodo\ que\ listara\ los\ individuos\ que\ visitaron\ el\ zoologico\ en\ una\ fecha\ determinada\r\n\ \r\n\ @param\ \ \ p_fecha\ \ \ \ \ \ \ \ \ Fecha\ en\ la\ cual\ se\ desea\ saber\ que\ individuos\ visitaron\ el\ zoologico\r\n\ @param\ \ \ p_visitante\ \ \ \ \ Tipo\ de\ visitante,\ en\ este\ caso\ individuo\r\n
 comment8.params=
 comment8.target=java.util.HashSet\ listarPersonas()
+comment8.text=\r\n\ Metodo\ que\ nos\ permite\ listar\ todos\ los\ individuos\ que\ visitaron\ el\ zoologico\ \r\n\ \r\n\ @return\ \ devolvera\ un\ HashSet\ que\ contendra\ todos\ los\ individuos\ que\ visitaron\ el\ zoologico\r\n
 numComments=9

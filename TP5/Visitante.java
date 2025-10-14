@@ -1,10 +1,10 @@
 import java.util.*;
 
 /**
- * Write a description of class Visitante here.
+ * Clase abstracta Visitante, que sera utilizada como "Molde" para que las clases Individuo y Delegacion trabajen sobre ella
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author      Hardoy - Harvey 
+ * @version     20/10/25
  */
 public abstract class Visitante
 {
@@ -27,10 +27,22 @@ public abstract class Visitante
         return this.fechaVisita;
     }
     
+    /**
+     * Metodo constructor de la clase Visitante
+     * 
+     * @param   p_fecha     Fecha en la que visito el zoologico
+     * @param   p_nombre    Nombre del visitante
+     */
+    
+    
     public Visitante(String p_nombre, Calendar p_fecha){
         this.setNombre(p_nombre);
         this.setFechaVisita(p_fecha);
     }
+    
+    /**
+     * Metodos abstractos que deberan ser definidos en las clases Individuo y Delegaci+on
+     */
     
     public abstract void mostrar();
     public abstract double entrada();

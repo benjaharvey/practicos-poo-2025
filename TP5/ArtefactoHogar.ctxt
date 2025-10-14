@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.target=ArtefactoHogar
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ ArtefactoHogar\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Clase\ abstracta\ ArtefactoHogar,\ que\ sera\ utilizada\ como\ Molde\ para\ que\ las\ clases\ Cocina,\ Heladera\ y\ Lavarropas\ trabajen\ sobre\ ella\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\r\n\ @version\ \ \ \ \ 20/10/25\r\n
 comment1.params=p_marca\ p_precio\ p_stock
 comment1.target=ArtefactoHogar(java.lang.String,\ float,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ ArtefactoHogar\r\n\ \r\n\ @param\ \ \ p_marca\ \ \ \ \ Nombre\ de\ la\ marca\ del\ artefacto\ que\ se\ desea\ instanciar\r\n\ @param\ \ \ p_precio\ \ \ \ Precio\ del\ artefacto\ que\ se\ desea\ instanciar\r\n\ @param\ \ \ p_stock\ \ \ \ \ Stock\ del\ artefacto\ que\ se\ desea\ instanciar\ (cuantos\ de\ estos\ artefactos\ hay)\r\n
 comment10.params=p_cuotas\ p_interes
 comment10.target=float\ creditoConCondicional(int,\ float)
+comment10.text=\r\n\ Metodo\ abstracto\ que\ debera\ ser\ definido\ en\ las\ clases\ que\ le\ corresponden\ a\ cada\ artefacto\r\n\ \r\n\ @param\ \ \ p_cuotas\ \ \ \ Cuotas\ que\ se\ deberan\ pagar\r\n\ @param\ \ \ p_interes\ \ \ Interes\ que\ se\ debera\ pagar\ en\ cada\ cuota\r\n
 comment2.params=p_marca
 comment2.target=void\ setMarca(java.lang.String)
 comment3.params=p_precio
@@ -19,6 +21,8 @@ comment7.params=
 comment7.target=int\ getStock()
 comment8.params=
 comment8.target=void\ imprimir()
+comment8.text=\r\n\ \ Metodo\ que\ mostrara\ la\ marca\ del\ artefacto,\ su\ precio\ y\ cuanto\ stock\ de\ este\ posee\ el\ comercio\r\n
 comment9.params=p_cuotas\ p_interes
 comment9.target=float\ cuotaCredito(int,\ float)
+comment9.text=\r\n\ Metodo\ que\ nos\ permite\ calcular\ el\ precio\ final\ que\ debera\ pagar\ el\ comprador\ si\ decide\ financiar\ su\ compra\ en\ cuotas\r\n\ \r\n\ @param\ \ \ p_cuotas\ \ \ \ Cantidad\ de\ cuotas\ que\ se\ deberan\ pagar\r\n\ @param\ \ \ p_interes\ \ \ Interes\ que\ se\ debera\ pagar\ en\ cada\ cuota\r\n
 numComments=11

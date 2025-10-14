@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Cocina
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Cocina\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Clase\ Cocina,\ que\ nos\ permitira\ definir\ las\ caracteristicas\ de\ este\ objeto\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 20/10/25\r\n
 comment1.params=p_hornallas
 comment1.target=void\ setHornallas(int)
 comment2.params=p_calorias
@@ -15,8 +15,11 @@ comment6.params=
 comment6.target=java.lang.String\ getDimensiones()
 comment7.params=p_marca\ p_precio\ p_stock\ p_hornallas\ p_calorias\ p_dimensiones
 comment7.target=Cocina(java.lang.String,\ float,\ int,\ int,\ int,\ java.lang.String)
+comment7.text=\r\n\ Metodo\ constructor\ de\ la\ clase\ Cocina\r\n\ \r\n\ @param\ \ \ p_marca\ \ \ \ \ \ \ \ \ Marca\ de\ la\ cocina\r\n\ @param\ \ \ p_precio\ \ \ \ \ \ \ \ Precio\ de\ la\ cocina\r\n\ @param\ \ \ p_stock\ \ \ \ \ \ \ \ \ Stock\ (cantidad)\ de\ cocinas\r\n\ @param\ \ \ p_hornallas\ \ \ \ \ Cantidad\ de\ hornallas\ que\ posee\ la\ cocina\r\n\ @param\ \ \ p_calorias\ \ \ \ \ \ Cantidad\ de\ calorias\ que\ posee\ la\ cocina\r\n\ @param\ \ \ p_dimensiones\ \ \ Dimensiones\ de\ la\ cocina\r\n
 comment8.params=p_cuotas\ p_interes
 comment8.target=float\ creditoConCondicional(int,\ float)
+comment8.text=\r\n\ Metodo\ que\ nos\ permite\ calcular\ el\ credito\ que\ debera\ pagar\ el\ cliente\r\n\ \r\n\ @return\ \ Cantidad\ de\ dinero\ que\ le\ costara\ al\ cliente\ financiar\ su\ compra\ en\ cuotas\r\n
 comment9.params=
 comment9.target=void\ imprimir()
+comment9.text=\r\n\ Metodo\ que\ imprime\ las\ caracteristicas\ de\ la\ cocina,\ ademas\ de\ su\ Marca,\ Precio\ y\ Stock\r\n
 numComments=10

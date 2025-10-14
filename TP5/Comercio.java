@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Comercio here.
+ * Clase Comercio, que nos permite instanciar y probar las clases Lavarropas, Heladera y Cocina
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author      Hardoy - Harvey 
+ * @version     20/10/25
  */
 public class Comercio
 {

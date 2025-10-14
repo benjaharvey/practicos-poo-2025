@@ -1,8 +1,9 @@
 #BlueJ class context
 comment0.target=Heladera
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Heladera\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Clase\ Heladera,\ que\ nos\ permitira\ definir\ el\ objeto\ junto\ con\ sus\ caracteristicas\ principales.\r\n\ \r\n\ @author\ \ \ \ \ \ Hardoy\ -\ Harvey\ \r\n\ @version\ \ \ \ \ 20/10/25\r\n
 comment1.params=p_marca\ p_precio\ p_stock\ p_pies\ p_puertas\ p_compresor
 comment1.target=Heladera(java.lang.String,\ float,\ int,\ int,\ int,\ boolean)
+comment1.text=\r\n\ Metodo\ constructor\ de\ la\ clase\ Heladera\r\n\ \r\n\ @param\ \ \ p_marca\ \ \ \ \ Marca\ de\ la\ heladera\r\n\ @param\ \ \ p_precio\ \ \ \ Precio\ individual\ de\ la\ heladera\r\n\ @param\ \ \ p_stock\ \ \ \ \ Stock\ (cantidad)\ de\ heladeras\r\n\ @param\ \ \ p_pies\ \ \ \ \ \ Cantidad\ de\ pies\ que\ posee\ la\ heladera\r\n\ @param\ \ \ p_puertas\ \ \ Cantidad\ de\ puertas\ que\ posee\ la\ heladera\r\n\ @param\ \ \ p_compresor\ Si\ la\ heladera\ posee\ o\ no\ un\ compresor\r\n
 comment2.params=p_pies
 comment2.target=void\ setPies(int)
 comment3.params=p_puertas
@@ -17,6 +18,8 @@ comment7.params=
 comment7.target=boolean\ getCompresor()
 comment8.params=p_cuotas\ p_interes
 comment8.target=float\ creditoConCondicional(int,\ float)
+comment8.text=\r\n\ Metodo\ que\ nos\ permite\ calcular\ el\ credito\ que\ debera\ pagar\ el\ cliente\r\n\ \r\n\ @return\ \ Cantidad\ de\ dinero\ que\ le\ costara\ al\ cliente\ financiar\ su\ compra\ en\ cuotas\r\n
 comment9.params=
 comment9.target=void\ imprimir()
+comment9.text=\r\n\ Metodo\ que\ imprime\ las\ caracteristicas\ de\ la\ heladera,\ ademas\ de\ su\ Marca,\ Precio\ y\ Stock\r\n
 numComments=10
