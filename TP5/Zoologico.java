@@ -51,15 +51,33 @@ public class Zoologico
         System.out.println("Visitantes en la fecha: " + p_fecha.getTime());
         
         for(Visitante p_visitante : this.getVisitantes()){
-            p_visitante.listarPorFecha(p_fecha, "-");
+            if(p_visitante.getFechaVisita() == p_fecha){
+                p_visitante.mostrar();
+            }
         }
     }
     
-    public double recaudacion(Calendar p_fechaDesde, Calendar p_fechaHasr){
-        return 0;
+    public double recaudacion(Calendar p_fechaDesde, Calendar p_fechaHasta){
+        double total = 0;
+        System.out.println("Recaudacion desde la fecha: " + p_fechaDesde.getTime() + "hasta la fecha: " + p_fechaHasta.getTime());
+        
+            for(Visitante p_visitante : this.getVisitantes()){
+                Calendar fecha = p_visitante.getFechaVisita();
+            if(!fecha.before(p_fechaDesde) && !fecha.after(p_fechaHasta)){
+                total += p_visitante.entrada();
+            }
+        }
+        
+        return total;
     }
     
     public HashSet <Persona> listarPersonasQueVisitaronElZoo(){
+        HashSet<Persona> personas = new HashSet<>();
         
+        for (Visitante v : this.getVisitantes()) {
+            personas.addAll(v.listarPersonas());
+        }
+        
+        return personas;
     }
 }
