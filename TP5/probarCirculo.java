@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class probarCirculo here.
+ * Clase probarCirculo, que permite instanciar y probar los metodos del objeto Circulo
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author          Hardoy - Harvey 
+ * @version         20/10/25
  */
 public class probarCirculo
 {

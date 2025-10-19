@@ -110,7 +110,7 @@ public class Delegacion extends Visitante{
      */
     
     public void listarPorFecha(Calendar p_fecha, String p_visitante) {
-        if (this.getFechaVisita().equals(p_fecha) && this.tipoVisitante().equals(p_visitante)) {
+        if ((this.getFechaVisita() == p_fecha) && (this.tipoVisitante() == p_visitante)) {
             this.mostrar();
         }
     }

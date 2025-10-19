@@ -1,10 +1,10 @@
 import java.util.*;
 
 /**
- * Write a description of class probarEmpleado here.
+ * Clase probarEmpleado, que permite instanciar y probar los metodos del objeto Empleado
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author      Hardoy - Harvey 
+ * @version     20/10/25
  */
 public class probarEmpleado
 {

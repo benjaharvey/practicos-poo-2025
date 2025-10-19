@@ -86,13 +86,32 @@ public class Elipse extends FiguraGeometrica
         return Math.PI * this.getEjeMayor() * this.getEjeMenor();
     }
     
+    
+    /**
+     * Metodo que desplazara el punto central de la elipse 
+     */
+    
     public void desplazar(double p_dx, double p_dy){
         this.getCentro().desplazar(p_dx, p_dy);
     }
     
+    
+    /**
+     * Metodo que calcula la distancia entre 2 elipses
+     * 
+     * @return Distancia entre las 2 elipses 
+     */
+    
     public double distanciaA(Elipse otroElipse){
         return this.getCentro().distanciaA(otroElipse.getCentro());
     }
+    
+    
+    /**
+     * Metodo que calcula que elipse tiene mayor superficie
+     * 
+     * @return la elipse de mayor superficie
+     */
     
     public Elipse elMayor(Elipse otroElipse){
         if(this.superficie() >= otroElipse.superficie()){
