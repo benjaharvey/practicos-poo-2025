@@ -136,7 +136,7 @@ public class Comercio
                         nuevaCocina.imprimir();
                         System.out.println("Cuotas: " + cuotas + " Interes: " + interes);
                         System.out.println("Valor Cuota: " + nuevaCocina.cuotaCredito(cuotas, interes));
-                        System.out.println("Valor Cuota Con Adicionales: " + nuevaCocina.cuotaCredito(cuotas, interes));
+                        System.out.println("Valor Cuota Con Adicionales: " + nuevaCocina.creditoConCondicional(cuotas, interes));
                     } else {
                         System.out.println("No se ha creado ninguna cocina!");
                     }
@@ -149,7 +149,7 @@ public class Comercio
                         nuevaHeladera.imprimir();
                         System.out.println("Cuotas: " + cuotas + " Interes: " + interes);
                         System.out.println("Valor Cuota: " + nuevaHeladera.cuotaCredito(cuotas, interes));
-                        System.out.println("Valor Cuota Con Adicionales: " + nuevaHeladera.cuotaCredito(cuotas, interes));
+                        System.out.println("Valor Cuota Con Adicionales: " + nuevaHeladera.creditoConCondicional(cuotas, interes));
                     } else {
                         System.out.println("No se ha creado ninguna heladera!");
                     }
@@ -162,7 +162,7 @@ public class Comercio
                         nuevoLavarropas.imprimir();
                         System.out.println("Cuotas: " + cuotas + " Interes: " + interes);
                         System.out.println("Valor Cuota: " + nuevoLavarropas.cuotaCredito(cuotas, interes));
-                        System.out.println("Valor Cuota Con Adicionales: " + nuevoLavarropas.cuotaCredito(cuotas, interes));
+                        System.out.println("Valor Cuota Con Adicionales: " + nuevoLavarropas.creditoConCondicional(cuotas, interes));
                     }
                 
                 break;
